@@ -9,6 +9,12 @@
   src: url("../fonts/GTEestiProDisplay-Thin.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "GTEestiProDisplay-Light";
+  src: url("../fonts/GTEestiProDisplay-Light.woff") format("woff");
+  src: url("../fonts/GTEestiProDisplay-Light.woff2") format("woff2");
+}
+
 body {
   font-family: "GTEestiProDisplay-Thin";
 }
@@ -610,5 +616,380 @@ template {
   margin-right: 106px;
   width: 200px;
   height: 100px;
+}
+
+.home {
+  padding: 100px 0 100px 0;
+}
+
+.home-wrapper {
+  margin: auto;
+  width: 1600px;
+  height: 740px;
+  background-image: url(../img/Brad-Pitt.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-info {
+  padding: 347px 287px 347px 797px;
+}
+
+.home-info__title {
+  margin: 0;
+  color: #666666;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: 0.02em;
+}
+
+.spring {
+  padding: 100px 0 100px 200px;
+}
+
+.spring-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1400px;
+  margin: auto;
+}
+
+.spring-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 486px;
+  height: 249px;
+}
+
+.spring-info__title {
+  margin: 0;
+  font-family: GTEestiProDisplay-Light;
+  color: #333333;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+}
+
+.spring-info__text {
+  margin: 0;
+  color: #666666;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.spring-info__span {
+  font-family: GTEestiProDisplay-Light;
+  color: #333333;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.ambassador {
+  padding: 100px 200px 100px 0;
+}
+
+.ambassador-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1400px;
+  margin: auto;
+}
+
+.ambassador-info {
+  position: relative;
+  background-image: url(../img/ambassador.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 900px;
+}
+
+.ambassador-info::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(38, 38, 38, 0.85);
+}
+
+.ambassador-info__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 247px 128px 135px 195px;
+  width: 573px;
+  height: 218px;
+}
+
+.ambassador-info__text {
+  margin: 0;
+  position: relative;
+  font-family: GTEestiProDisplay-Light;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.ambassador-info__span {
+  margin: 0;
+  position: relative;
+  font-family: GTEestiProDisplay-Light;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.order {
+  padding: 100px 200px 100px 0;
+}
+
+.order-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1400px;
+  margin: auto;
+}
+
+.order-block {
+  padding: 87px 92px 90px 99px;
+  width: 600px;
+  height: 450px;
+  background-color: #F3F3F3;
+}
+
+.order-block__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 410px;
+  height: 275px;
+}
+
+.order-block__title {
+  margin: 0;
+  font-family: GTEestiProDisplay-Light;
+  color: #333333;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+}
+
+.order-block__text {
+  margin: 0;
+  color: #666666;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.order-block__span {
+  font-family: GTEestiProDisplay-Light;
+  color: #333333;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.footer-form {
+  width: 309px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.footer-form__title {
+  margin-top: 0;
+  margin-bottom: 43px;
+  color: #333333;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+}
+
+.footer-form__form {
+  position: relative;
+}
+
+.footer-form__input {
+  width: 285px;
+  height: 55px;
+  padding: 18px 68px 18px 24px;
+}
+
+.footer-form__image {
+  position: absolute;
+  top: 21px;
+  right: 25px;
+  bottom: 21px;
+  left: 240px;
+}
+
+.footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 68px;
+}
+
+.footer-info__title {
+  margin-top: 0;
+  margin-bottom: 41px;
+  font-family: GTEestiProDisplay-Light;
+  color: #333333;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 25px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+}
+
+.footer-info__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-info__customer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-info__block-customer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 204px;
+}
+
+.footer-info__block-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 93px;
+}
+
+.footer-info__block-general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 173px;
+}
+
+.footer-info__link {
+  color: #333333;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+}
+
+.footer-info__follows-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 234px;
 }
 /*# sourceMappingURL=style.css.map */
