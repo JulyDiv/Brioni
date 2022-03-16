@@ -17,6 +17,12 @@
         <div class="container">
             <div class="navbar-menu">
 
+                <button class="navbar-menu__button">
+                    <span class="navbar-menu__line"></span>
+                    <span class="navbar-menu__line"></span>
+                    <span class="navbar-menu__line"></span>
+                </button>
+
                 <div class="navbar-menu__block">
                     <li class="navbar-menu__item">
                         <a href="#" class="navbar-menu__link">Assortment</a>
@@ -35,25 +41,224 @@
 
                 <div class="icon">
                     <a href="#" class="icon__link">
-                        <img src="img/search.svg" alt="Icon: search" class="icon__image"></a>
+                        <img src="img/search.svg" alt="Icon: search"
+                            class="icon__image icon__image--mobile_visible"></a>
 
                     <a href="#" class="icon__link">
-                        <img src="img/Select.svg" alt="Icon: select" class="icon__image"></a>
+                        <img src="img/Select.svg" alt="Icon: select" class="icon__image icon__image--mobile_hidden"></a>
 
                     <a href="#" class="icon__link">
-                        <img src="img/user.svg" alt="Icon: user" class="icon__image"></a>
+                        <img src="img/user.svg" alt="Icon: user" class="icon__image icon__image--mobile_hidden"></a>
 
                     <a href="#" class="icon__link">
-                        <img src="img/backet.svg" alt="Icon: backet" class="icon__image"></a>
+                        <img src="img/backet.svg" alt="Icon: backet"
+                            class="icon__image icon__image--mobile_visible"></a>
                 </div>
             </div>
             <!-- /.navbar-menu -->
         </div>
         <!-- /.container -->
     </header>
-</section>
+    <section class="catalog">
+    <div class="container">
+    <nav class="catalog-breadcrumb">
+        <ul class="catalog-breadcrumb__list">
+            <li class="catalog-breadcrumb__item">
+                <a href="#" class="catalog-breadcrumb__link">Assortment</a>
+            </li>
+            <li class="catalog-breadcrumb__item">
+                <a href="#" class="catalog-breadcrumb__link">Costume collection</a>
+            </li>
+            <li class="catalog-breadcrumb__item">
+                Jackets
+            </li>
+        </ul>
+    </nav>
+    <!-- /.breadcrumb -->
+        <p class="catalog-text">
+        Models for all occasions: from impeccably tailored
+        classic blazers to more relaxed blazers for relax.
+        </p>
+        <!-- /.catalog-text -->
+
+        <div class="character">
+            <div class="character__color-size">
+            <div class="character__block">
+                <span class="character__span">Color</span>
+                <button class="character__button js-select">
+                    <img class="character__image" src="img/arrow-down.svg" alt="arrow down">
+                </button>
+                <div class="character-dropdown js-dropdown">
+                <div class="character-dropdown__option-list">
+                    <div class="character-dropdown__option-item">
+                        <input class="character-dropdown__checkbox" type="checkbox">
+                        <label class="character-dropdown__label">White</label>
+                    </div>
+
+                    <div class="character-dropdown__option-item">
+                        <input class="character-dropdown__checkbox" type="checkbox">
+                        <label class="character-dropdown__label">Black</label>
+                    </div>
+
+                    <div class="character-dropdown__option-item">
+                        <input class="character-dropdown__checkbox" type="checkbox">
+                        <label class="character-dropdown__label">Beige</label>
+                    </div>
+
+                    <div class="character-dropdown__option-item">
+                        <input class="character-dropdown__checkbox" type="checkbox">
+                        <label class="character-dropdown__label">Gold</label>
+                    </div>
+
+                    <div class="character-dropdown__option-item">
+                        <input class="character-dropdown__checkbox" type="checkbox">
+                        <label class="character-dropdown__label">Brown</label>
+                    </div>
+
+                    <div class="character-dropdown__option-item">
+                        <input class="character-dropdown__checkbox" type="checkbox">
+                        <label class="character-dropdown__label">Blue</label>
+                    </div>
+
+                    <div class="character-dropdown__option-item">
+                        <input class="character-dropdown__checkbox" type="checkbox">
+                        <label class="character-dropdown__label">Grey</label>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="character__block">
+                <span class="character__span">Size</span>
+                <button class="character__button">
+                    <img class="character__image" src="img/arrow-down.svg" alt="arrow down">
+                </button>
+            </div>
+            </div>
+            <div class="character__block">
+                <span class="character__span">Sort</span>
+                <button class="character__button">
+                    <img class="character__image" src="img/arrow-down.svg" alt="arrow down">
+                </button>
+            </div>
+            
+        </div>
+        <!-- /.character -->
+
+        <!-- Линии на сайте -->
+        <div class="catalog__line"></div>
+
+        <div class="catalog-assortment">
+
+            <div class="catalog-assortment__jacket">
+                <div class="catalog-assortment__image">
+                    <img src="img/jacket-1.png" alt="Photo: Jacket">
+                </div>
+                <div class="catalog-assortment__info">
+                    <span class="catalog-assortment__text">Travel jacket in cashmere and cotton</span>
+                    <img src="img/select-catalog.svg" alt="Icon: select">
+                </div>
+                <span class="catalog-assortment__price">€ 1.379,51</span>
+            </div>
+
+            <div class="catalog-assortment__jacket">
+                <div class="catalog-assortment__image">
+                    <img src="img/jacket-2.png" alt="Photo: Jacket">
+                </div>
+                <div class="catalog-assortment__info">
+                    <span class="catalog-assortment__text">Escorial Wool Blazer</span>
+                    <img src="img/select-catalog.svg" alt="Icon: select">
+                </div>
+                <span class="catalog-assortment__price">€ 1.244,27</span>
+            </div>
+
+            <div class="catalog-assortment__jacket">
+                <div class="catalog-assortment__image">
+                    <img src="img/jacket-3.png" alt="Photo: Jacket">
+                </div>
+                <div class="catalog-assortment__info">
+                    <span class="catalog-assortment__text">Sea Island Cotton Jacket</span>
+                    <img src="img/select-catalog.svg" alt="Icon: select">
+                </div>
+                <span class="catalog-assortment__price">€ 973,78</span>
+            </div>
+
+            <div class="catalog-assortment__jacket">
+                <div class="catalog-assortment__image">
+                    <img src="img/jacket-4.png" alt="Photo: Jacket">
+                </div>
+                <div class="catalog-assortment__info">
+                    <span class="catalog-assortment__text">Super Plume jacket made of flannel wool</span>
+                    <img src="img/select-catalog.svg" alt="Icon: select">
+                </div>
+                <span class="catalog-assortment__price">€ 865,58</span>
+            </div>
+
+            <div class="catalog-assortment__jacket catalog-assortment__jacket--mobile_visible">
+                <div class="catalog-assortment__image">
+                    <img src="img/jacket-5.png" alt="Photo: Jacket">
+                </div>
+                <div class="catalog-assortment__info">
+                    <span class="catalog-assortment__text">Super Plume jacket in cotton corduroy</span>
+                    <img src="img/select-catalog.svg" alt="Icon: select">
+                </div>
+                <span class="catalog-assortment__price">€ 1.803,27</span>
+            </div>
+
+            <div class="catalog-assortment__jacket catalog-assortment__jacket--mobile_visible">
+                <div class="catalog-assortment__image">
+                    <img src="img/jacket-6.png" alt="Photo: Jacket">
+                </div>
+                <div class="catalog-assortment__info">
+                    <span class="catalog-assortment__text">Virgilio jacket in silk and wool</span>
+                    <img src="img/select-catalog.svg" alt="Icon: select">
+                </div>
+                <span class="catalog-assortment__price">€ 4.147,54</span>
+            </div>
+
+            <div class="catalog-assortment__jacket catalog-assortment__jacket--mobile_hidden">
+                <div class="catalog-assortment__image">
+                    <img src="img/jacket-7.png" alt="Photo: Jacket">
+                </div>
+                <div class="catalog-assortment__info">
+                    <span class="catalog-assortment__text">Natural wool travel jacket</span>
+                    <img src="img/select-catalog.svg" alt="Icon: select">
+                </div>
+                <span class="catalog-assortment__price">€ 3.786,88</span>
+            </div>
+
+            <div class="catalog-assortment__jacket catalog-assortment__jacket--mobile_hidden">
+                <div class="catalog-assortment__image">
+                    <img src="img/jacket-8.png" alt="Photo: Jacket">
+                </div>
+                <div class="catalog-assortment__info">
+                    <span class="catalog-assortment__text">Ravello jacket in cashmere and silk</span>
+                    <img src="img/select-catalog.svg" alt="Icon: select">
+                </div>
+                <span class="catalog-assortment__price">€ 4.012,29</span>
+            </div>
+
+            <div class="catalog-assortment__jacket catalog-assortment__jacket--mobile_hidden">
+                <div class="catalog-assortment__image">
+                    <img src="img/jacket-9.png" alt="Photo: Jacket">
+                </div>
+                <div class="catalog-assortment__info">
+                    <span class="catalog-assortment__text">Ravello jacket in sustainable cashmere</span>
+                    <img src="img/select-catalog.svg" alt="Icon: select">
+                </div>
+                <span class="catalog-assortment__price">€ 4.553,27</span>
+            </div>
+        </div>
+        <!-- /.catalog-assortment -->
+        <div class="catalog-button">
+        <button class="catalog-button__button">SHOW MORE<a href="#"></a></button></div>
+    </div>
+    <!-- .container -->
+    </section>
+    <!-- /.catalog -->
 <footer class="footer">
     <div class="container">
+                <!-- Линии на сайте -->
+                <div class="footer__line"></div>
         <div class="footer-wrapper">
             <div class="footer-form">
                 <h3 class="footer-form__title">Subscribe to Brioni news</h3>
@@ -66,7 +271,8 @@
             <div class="footer-info">
                 <div class="footer-info__custumer">
                     <h3 class="footer-info__title">Customer Service</h3>
-                    <ul class="footer-info__list footer-info__block-customer">
+                    <ul
+                        class="footer-info__list footer-info__block-customer footer-info__block-customer--mobile_hidden">
                         <li class="footer-info__item"><a href="#" class="footer-info__link">Delivery</a></li>
                         <li class="footer-info__item"><a href="#" class="footer-info__link">Orders and Returns</a></li>
                         <li class="footer-info__item"><a href="#" class="footer-info__link">Exclusive Services</a></li>
@@ -78,9 +284,9 @@
                 <!-- /.footer-info__custumer -->
                 <div class="footer-info__about">
                     <h3 class="footer-info__title">About Brioni</h3>
-                    <ul class="footer-info__list footer-info__block-about">
+                    <ul class="footer-info__list footer-info__block-about footer-info__block-about--mobile_hidden">
                         <li class="footer-info__item"><a href="#" class="footer-info__link">Our Company</a></li>
-                        <li class="footer-info__item"><a href="#" class="footer-info__link">Atelier Briony</a></li>
+                        <li class="footer-info__item"><a href="#" class="footer-info__link">Atelier Brioni</a></li>
                         <li class="footer-info__item"><a href="#" class="footer-info__link">The World of Bespoke</a>
                         </li>
                     </ul>
@@ -88,7 +294,7 @@
                 <!-- /.footer-info__about -->
                 <div class="footer-info__general">
                     <h3 class="footer-info__title">General information</h3>
-                    <ul class="footer-info__list footer-info__block-general">
+                    <ul class="footer-info__list footer-info__block-general footer-info__block-general--mobile_hidden">
                         <li class="footer-info__item"><a href="#" class="footer-info__link">Legal Section</a></li>
                         <li class="footer-info__item"><a href="#" class="footer-info__link">Investor Relations</a></li>
                         <li class="footer-info__item"><a href="#" class="footer-info__link">Privacy Policy</a></li>
@@ -100,17 +306,23 @@
                 <div class="footer-info__follows">
                     <h3 class="footer-info__title">Follow us</h3>
                     <div class="footer-info__follows-links">
-                        <a href="#" class="footer-info__link"><img src="img/Facebook.svg" alt="Icon:Facebook"></a>
-                        <a href="#" class="footer-info__link"><img src="img/Twitter.svg" alt="Icon:Twitter"></a>
-                        <a href="#" class="footer-info__link"><img src="img/Instagram.svg" alt="Icon:Instagram"></a>
-                        <a href="#" class="footer-info__link"><img src="img/Google.svg" alt="Icon:Google"></a>
-                        <a href="#" class="footer-info__link"><img src="img/YouTube.svg" alt="Icon:YouTube"></a>
+                        <a href="#" class="footer-info__link"><img class="footer-info__image" src="img/Facebook.svg"
+                                alt="Icon:Facebook"></a>
+                        <a href="#" class="footer-info__link"><img class="footer-info__image" src="img/Twitter.svg"
+                                alt="Icon:Twitter"></a>
+                        <a href="#" class="footer-info__link"><img class="footer-info__image" src="img/Instagram.svg"
+                                alt="Icon:Instagram"></a>
+                        <a href="#" class="footer-info__link"><img class="footer-info__image" src="img/Google.svg"
+                                alt="Icon:Google"></a>
+                        <a href="#" class="footer-info__link"><img class="footer-info__image" src="img/YouTube.svg"
+                                alt="Icon:YouTube"></a>
                     </div>
                     <!-- /.footer-info__follows-links -->
                 </div>
                 <!-- /.footer-info__follows -->
             </div>
             <!-- /.footer-info -->
+            <div class="footer__line"></div>
             <span class="footer__span">2022 © Brioni</span>
         </div>
         <!-- /.footer-wrapper -->

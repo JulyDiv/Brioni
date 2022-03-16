@@ -1,0 +1,57 @@
+.character
+    display: flex
+    justify-content: space-between
+    max-width: 1170px
+    margin-bottom: 26px
+    &__color-size
+        display: flex
+        justify-content: space-between
+        width: 139px
+    &__block
+        display: flex
+        align-items: center
+    &__span
+        margin-right: 14px
+        font-family: GTEestiProDisplay-Light
+        color: $text-color3
+        font-style: normal
+        font-weight: 350
+        font-size: 16px
+        line-height: 19px
+    &__button
+        padding: 0
+        background-color: inherit
+        border: none
+        cursor: pointer
+    &-dropdown
+        padding: 25px 0px 25px 25px
+        width: 260px
+        display: none
+        &__option-list
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            width: 77px
+            height: 271px
+        &__option-item
+            display: flex
+            align-items: center
+        &__checkbox
+            // appearance: none
+            position: relative
+            margin-right: 19px
+            width: 17px
+            height: 17px
+            border: 1px solid #E5E5E5
+        // &__checkbox:checked
+        //     &:after
+        //         content: ''
+        //         position: absolute
+        //         top: 50%
+        //         left: 50%
+        //         width: 13px
+        //         height: 7px
+        //         border: none
+        //         border-bottom: 3px solid lighten(#383b45, 50)
+        //         border-left: 3px solid lighten(#383b45, 50)
+        //         transform: translate(-50%, -75%) rotate(-45deg)

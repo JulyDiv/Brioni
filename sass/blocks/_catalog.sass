@@ -1,0 +1,82 @@
+.catalog
+    padding-top: 47px
+    &-breadcrumb
+        margin-bottom: 43px
+        &__list
+            display: flex
+            align-items: center
+            margin: 0
+            padding-left: 0
+            list-style: none
+        &__item
+            font-family: GTEestiProDisplay-Light
+            color: $text-color2
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 19px
+            &:not(:last-child)
+                &::after
+                    content: '/'
+                    margin-right: 4px
+        &__link
+            text-decoration: none
+            color: inherit
+    &-text 
+        margin-top: 0
+        margin-bottom: 93px
+        max-width: 352px
+    &__line
+        max-width: 1200px
+        height: 1px
+        background-color: #E5E5E5
+        margin-bottom: 50px
+    &-assortment
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        height: 1643px
+        &__jacket
+            width: 370px
+        &__image
+            margin-bottom: 17px
+            max-height: 450px
+            cursor: pointer
+        &__info
+            display: flex
+            justify-content: space-between
+            margin-bottom: 12px
+        &__text
+            font-family: GTEestiProDisplay-Light
+            font-style: normal
+            color: $text-color3
+            font-weight: 350
+            font-size: 16px
+            line-height: 19px
+        &__price
+            color: $text-color2
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 19px
+    &-button
+        display: flex
+        justify-content: center
+        margin-bottom: 100px
+        &__button
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            padding: 0
+            width: 280px
+            height: 40px
+            text-transform: uppercase
+            background-color: #000
+            border: none
+            color: white
+            font-weight: 300
+            font-size: 16px
+            line-height: 19px
+            letter-spacing: 0.03em
+            cursor: pointer
