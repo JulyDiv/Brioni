@@ -12,27 +12,9 @@
         padding: 0px 0px 100px 0px
         &-wrapper
             width: 900px
+            margin: auto
         &-info
             margin-right: 40px
-        &-image
-            width: 600px
-            height: 400px
-    .ambassador
-        padding: 0px 0px 100px 0px
-        &-wrapper
-            width: 900px
-        &-info
-            display: flex
-            align-items: center
-            justify-content: center
-            width: 900px
-            height: 400px
-            &__block
-                margin: 0
-                width: 330px
-                height: 190px
-            &__text
-                font-size: 20px
         &-image
             width: 600px
             height: 400px
@@ -40,15 +22,16 @@
         padding: 0px 0px 100px 0px
         &-wrapper
             width: 900px
+            margin: auto
         &-image
             width: 600px
             height: 400px
         &-block
             display: flex
             align-items: center
-            padding: 20px
+            padding: 0 0 0 40px
             width: 300px
-            height: 340px
+            height: 400px
             &__info
                 width: 300px
                 height: 260px
@@ -56,6 +39,54 @@
                 font-size: 25px
             &__text
                 font-size: 15px
+    .swiper
+        width: 1200px
+        height: 600px
+        background-size: 100%
+        &-button
+            padding: 0
+            top: 278px
+            width: 100px
+            height: 100px
+            background: rgba(229, 229, 229, 0.2)
+            border-radius: 50%
+            border: none
+            cursor: pointer
+            background-repeat: no-repeat
+            background-position: center
+            &::after
+                content: ''
+            &-prev
+                left: 95px
+                background-image: url(../img/arrow-prev.svg)
+            &-next
+                right: 95px
+                background-image: url(../img/arrow-next.svg)
+        &-pagination
+            &-bullet
+                background-color: inherit
+                width: 8px
+                height: 8px
+                border: 1px solid rgba(255, 255, 255, 0.6)
+                &-active
+                    background-color: white
+                    width: 11px
+                    height: 11px
+    .ambassador
+        padding: 0px 0px 100px 0px
+        &-wrapper
+            width: 1200px
+        &-info
+            display: flex
+            align-items: center
+            justify-content: center
+            height: 400px
+            &__block
+                margin: 0
+                width: 330px
+                height: 190px
+            &__text
+                font-size: 20px
     .catalog
         &-assortment
             height: 1643px
@@ -115,8 +146,64 @@
         &-image
             width: 640px
             height: 400px
-    .ambassador
+    .order
         padding: 50px 0 50px 0
+        &-wrapper
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            max-width: 640px
+            height: 690px
+        &-image
+            width: 640px
+            height: 400px
+        &-block
+            justify-content: center
+            width: 640px
+            height: 248px
+            padding: 0
+            &__info
+                margin: 0
+                width: 485px
+                height: 249px
+            &__title
+                font-size: 25px
+            &__text
+                font-size: 15px
+    .swiper
+        width: 640px
+        height: 320px
+        background-size: 100%
+        &-button
+            padding: 0
+            top: 170px
+            width: 50px
+            height: 50px
+            border-radius: 50%
+            border: none
+            cursor: pointer
+            background-color: inherit
+            background-repeat: no-repeat
+            background-position: center
+            &::after
+                content: ''
+            &-prev
+                left: 40px
+                background-image: url(../img/arrow-prev.svg)
+            &-next
+                right: 40px
+                background-image: url(../img/arrow-next.svg)
+        &-pagination
+            &-bullet
+                background-color: inherit
+                width: 6px
+                height: 6px
+                border: 1px solid rgba(255, 255, 255, 0.6)
+                &-active
+                    background-color: white
+                    width: 8px
+                    height: 8px
+    .ambassador
         &-wrapper
             max-width: 640px
         &-info
@@ -129,32 +216,6 @@
                 margin: 0
                 width: 270px
                 height: 190px
-            &__text
-                font-size: 15px
-        &-image
-            width: 600px
-            height: 400px
-    .order
-        padding: 50px 0 50px 0
-        &-wrapper
-            display: flex
-            flex-direction: column
-            justify-content: space-between
-            max-width: 640px
-        &-image
-            width: 640px
-            height: 400px
-        &-block
-            display: flex
-            align-items: center
-            width: 640px
-            height: 340px
-            &__info
-                margin: auto
-                width: 640px
-                height: 260px
-            &__title
-                font-size: 25px
             &__text
                 font-size: 15px
     .icon
@@ -257,7 +318,7 @@
         &__block
             display: none
     .home
-        padding: 100px 0 100px 0
+        padding: 100px 0 150px 0
         &-wrapper
             max-width: 320px
             height: 250px
@@ -267,7 +328,7 @@
             &__title
                 display: none
     .spring
-        padding: 50px 0 50px 0
+        padding: 0
         &-wrapper
             display: flex
             flex-direction: column
@@ -281,20 +342,48 @@
             &__title
                 font-size: 18px
             &__text
-                font-size: 13px
-            &__span
+                font-size: 11px
+            &__link
                 font-size: 10px
         &-image
             width: 320px
-            height: 290px
-    .ambassador
+            height: 270px
+    .order
         padding: 50px 0 50px 0
         &-wrapper
             display: flex
             flex-direction: column
             justify-content: space-between
             max-width: 320px
-            height: 900px
+            height: 520px
+        &-image
+            width: 320px
+            height: 240px
+        &-block
+            display: flex
+            align-items: center
+            width: 320px
+            height: 300px
+            &__info
+                width: 250px
+                height: 230px
+            &__title
+                font-size: 18px
+            &__text
+                font-size: 11px
+            &__link
+                font-size: 10px
+    .swiper
+        display: none
+    .ambassador
+        padding: 50px 0 50px 0
+        &-wrapper
+            padding: 0
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            max-width: 320px
+            height: 400px
         &-info
             display: flex
             align-items: center
@@ -307,35 +396,7 @@
                 height: 150px
             &__text
                 font-size: 13px
-            &__span
-                font-size: 10px
-        &-image
-            width: 320px
-            height: 400px
-    .order
-        padding: 50px 0 50px 0
-        &-wrapper
-            display: flex
-            flex-direction: column
-            justify-content: space-between
-            max-width: 320px
-        &-image
-            width: 320px
-            height: 350px
-        &-block
-            display: flex
-            align-items: center
-            width: 320px
-            height: 340px
-            &__info
-                margin: auto
-                width: 300px
-                height: 260px
-            &__title
-                font-size: 18px
-            &__text
-                font-size: 13px
-            &__span
+            &__link
                 font-size: 10px
     .icon
         width: 69px

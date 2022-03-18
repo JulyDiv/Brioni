@@ -1,27 +1,74 @@
-var $select = $('.js-select'),
-  $dropdown = $('.js-dropdown'),
-  $checkbox = $('input[type=checkbox]'),
-  $icon = $('.js-icon'),
-  isOpen = false;
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
 
-var openSelection = function()  {
-  $dropdown.addClass('is-open');
-  isOpen = true;
-}
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
 
-var closeSelection = function() {
-  $dropdown.removeClass('is-open');
-  isOpen = false;
-}
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-$checkbox.on('click', function(e) {
-  console.log('click');
+  // Keyboard
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 });
 
-$select.each(function(button, wrap) {
-  var $wrap = $(wrap);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var $select = $('.js-select'),
+//   $dropdown = $('.js-dropdown'),
+//   $checkbox = $('input[type=checkbox]'),
+//   $icon = $('.js-icon'),
+//   isOpen = false;
+
+// var openSelection = function()  {
+//   $dropdown.addClass('is-open');
+//   isOpen = true;
+// }
+
+// var closeSelection = function() {
+//   $dropdown.removeClass('is-open');
+//   isOpen = false;
+// }
+
+// $checkbox.on('click', function(e) {
+//   console.log('click');
+// });
+
+// $select.each(function(button, wrap) {
+//   var $wrap = $(wrap);
   
-  $wrap.on('click', function() {
-    isOpen ? closeSelection() : openSelection();
-  });
-});
+//   $wrap.on('click', function() {
+//     isOpen ? closeSelection() : openSelection();
+//   });
+// });

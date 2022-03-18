@@ -1,11 +1,10 @@
 .spring
-    padding: 100px 0 100px 200px
+    padding: 0 0 100px 200px
     &-wrapper
         display: flex
         align-items: center
         justify-content: space-between
         width: 1400px
-        margin: auto
     &-info
         display: flex
         flex-direction: column
@@ -28,25 +27,96 @@
             font-weight: 300
             font-size: 16px
             line-height: 19px
-        &__span
+        &__link
             font-family: GTEestiProDisplay-Light
             color: $text-color3
             font-style: normal
             font-weight: 350
             font-size: 16px
             line-height: 19px
-.ambassador
-    padding: 100px 200px 100px 0
+.order
+    padding: 0 200px 100px 0
     &-wrapper
         display: flex
+        align-items: center
+        justify-content: space-between
         width: 1400px
-        margin: auto
+    &-block
+        padding: 163px 99px
+        width: 600px
+        height: 600px
+        &__info
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            width: 410px
+            height: 275px
+        &__title
+            margin: 0
+            font-family: GTEestiProDisplay-Light
+            color: $text-color3
+            font-style: normal
+            font-weight: 350
+            font-size: 28px
+            line-height: 32px
+            letter-spacing: 0.02em
+        &__text
+            margin: 0
+            color: $text-color2
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 19px
+        &__link
+            font-family: GTEestiProDisplay-Light
+            color: $text-color3
+            font-style: normal
+            font-weight: 350
+            font-size: 16px
+            line-height: 19px
+.swiper
+    width: 1600px
+    height: 800px
+    &-button
+        padding: 0
+        top: 362px
+        width: 120px
+        height: 120px
+        background: rgba(229, 229, 229, 0.2)
+        border-radius: 50%
+        border: none
+        cursor: pointer
+        background-repeat: no-repeat
+        background-position: center
+        &::after
+            content: ''
+        &-prev
+            left: 140px
+            background-image: url(../img/arrow-prev.svg)
+        &-next
+            right: 140px
+            background-image: url(../img/arrow-next.svg)
+    &-pagination
+        &-bullet
+            background-color: inherit
+            width: 10px
+            height: 10px
+            border: 1px solid rgba(255, 255, 255, 0.6)
+            &-active
+                background-color: white
+                width: 13px
+                height: 13px
+.ambassador
+    &-wrapper
+        padding-top: 100px
+        display: flex
+        width: 1600px
     &-info
         position: relative
         background-image: url(../img/ambassador.jpg)
         background-repeat: no-repeat
         background-size: cover
-        width: 900px
+        width: 1600px
         &::before
             content: ''
             position: absolute
@@ -74,7 +144,7 @@
             line-height: 32px
             letter-spacing: 0.02em
             color: rgba(255, 255, 255, 0.9)
-        &__span
+        &__link
             margin: 0
             position: relative
             font-family: GTEestiProDisplay-Light
@@ -83,45 +153,3 @@
             line-height: 19px
             letter-spacing: 0.03em
             color: rgba(255, 255, 255, 0.75)
-.order
-    padding: 100px 200px 100px 0
-    &-wrapper
-        display: flex
-        align-items: center
-        justify-content: space-between
-        width: 1400px
-        margin: auto
-    &-block
-        padding: 87px 92px 90px 99px
-        width: 600px
-        height: 450px
-        background-color: $bg-color2
-        &__info
-            display: flex
-            flex-direction: column
-            justify-content: space-between
-            width: 410px
-            height: 275px
-        &__title
-            margin: 0
-            font-family: GTEestiProDisplay-Light
-            color: $text-color3
-            font-style: normal
-            font-weight: 350
-            font-size: 28px
-            line-height: 32px
-            letter-spacing: 0.02em
-        &__text
-            margin: 0
-            color: $text-color2
-            font-style: normal
-            font-weight: 300
-            font-size: 16px
-            line-height: 19px
-        &__span
-            font-family: GTEestiProDisplay-Light
-            color: $text-color3
-            font-style: normal
-            font-weight: 350
-            font-size: 16px
-            line-height: 19px
