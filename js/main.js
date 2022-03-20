@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+var swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -22,13 +22,27 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+var swiper = new Swiper('.swiper2', {
+  slidesPerView: 3,
+  spaceBetween: 45,
+  freeMode: true,
 
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    hide: false,
+    dragSize: 400,
+  },
 
-
-
-
-
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+});
 
 
 
