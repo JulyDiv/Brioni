@@ -44,6 +44,11 @@ var swiper = new Swiper('.swiper2', {
   },
 });
 
+// if (window.matchMedia("(max-width: 640px)").swiper2) {
+//   slidesPerView: 2,
+//   spaceBetween: 45,
+//   freeMode: true,
+// };
 
 
 
