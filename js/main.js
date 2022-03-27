@@ -1,4 +1,4 @@
-var swiper = new Swiper('.swiper', {
+var swiper = new Swiper('.swiper1', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -42,13 +42,31 @@ var swiper = new Swiper('.swiper2', {
     enabled: true,
     onlyInViewport: false,
   },
+
+  breakpoints: {
+    630: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: false,
+        dragSize: 200,
+  },
+    },
+    320: {
+      slidesPerView: 1,
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: false,
+        dragSize: 50,
+  },
+    }
+  },
+
 });
 
-// if (window.matchMedia("(max-width: 640px)").swiper2) {
-//   slidesPerView: 2,
-//   spaceBetween: 45,
-//   freeMode: true,
-// };
+
+
 
 
 

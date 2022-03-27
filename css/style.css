@@ -1719,12 +1719,12 @@ template {
   .order-block__text {
     font-size: 15px;
   }
-  .swiper {
+  .swiper1 {
     width: 960px;
     height: 480px;
     background-size: 100%;
   }
-  .swiper-button {
+  .swiper1-button {
     padding: 0;
     top: 278px;
     width: 100px;
@@ -1736,24 +1736,24 @@ template {
     background-repeat: no-repeat;
     background-position: center;
   }
-  .swiper-button::after {
+  .swiper1-button::after {
     content: '';
   }
-  .swiper-button-prev {
+  .swiper1-button-prev {
     left: 95px;
     background-image: url(../img/arrow-prev.svg);
   }
-  .swiper-button-next {
+  .swiper1-button-next {
     right: 95px;
     background-image: url(../img/arrow-next.svg);
   }
-  .swiper-pagination-bullet {
+  .swiper1-pagination-bullet {
     background-color: inherit;
     width: 8px;
     height: 8px;
     border: 1px solid rgba(255, 255, 255, 0.6);
   }
-  .swiper-pagination-bullet-active {
+  .swiper1-pagination-bullet-active {
     background-color: white;
     width: 11px;
     height: 11px;
@@ -2172,8 +2172,20 @@ template {
     margin-bottom: 46px;
   }
   .complete__title {
+    margin-bottom: 34px;
     font-size: 22px;
     line-height: 26px;
+  }
+  .swiper2 {
+    width: 600px;
+    height: 444px;
+  }
+  .swiper2-slide2__image {
+    width: 280px;
+    height: 350px;
+  }
+  .swiper2-button2 {
+    display: none;
   }
   .footer-form {
     margin-bottom: 0;
@@ -2350,7 +2362,7 @@ template {
   .order-block__link {
     font-size: 10px;
   }
-  .swiper {
+  .swiper1 {
     display: none;
   }
   .ambassador {
@@ -2432,6 +2444,20 @@ template {
   }
   .card-wrapper {
     max-width: 600px;
+  }
+  .swiper2 {
+    width: 300px;
+    height: 454px;
+  }
+  .swiper2-slide2__select {
+    width: 300px;
+  }
+  .swiper2-slide2__image {
+    width: 300px;
+    height: 370px;
+  }
+  .swiper2-button2 {
+    display: none;
   }
   .footer {
     padding-top: 47px;
