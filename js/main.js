@@ -44,6 +44,15 @@ var swiper = new Swiper('.swiper2', {
   },
 
   breakpoints: {
+    1500: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: false,
+        dragSize: 400,
+  },
+    },
     630: {
       slidesPerView: 2,
       spaceBetween: 40,
@@ -63,6 +72,48 @@ var swiper = new Swiper('.swiper2', {
     }
   },
 
+});
+
+var swiper = new Swiper('.swiper3', {
+  // Optional parameters
+  direction: 'horizontal',
+  spaceBetween: 10,
+  loop: true,
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    hide: false,
+    dragSize: 50,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Keyboard
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+});
+
+$(document).ready(function () {
+
+var menuButton = $(".menu-button");
+menuButton.on("click", function () {
+  $(".menu-mobile").toggleClass("menu-mobile--visible");
+});
+
+var menuMobile = $(".menu-mobile--visible");
+menuMobile.on(openMenu);
+
+  function openMenu () {
+    var mobileOverlay = $(".menu-mobile__overlay");
+    mobileOverlay.addClass("menu-mobile__overlay--visible");
+  }
+  
 });
 
 

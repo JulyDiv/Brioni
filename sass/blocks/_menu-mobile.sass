@@ -1,0 +1,105 @@
+.menu
+    width: 370px
+    &__line
+        width: 350px
+        height: 1px
+        background-color: #E5E5E5
+    &-button
+        padding: 0
+        border: none
+        background-color: inherit
+        cursor: pointer
+    &-mobile
+        position: fixed
+        top: 60px
+        padding: 49px 0 49px 20px
+        background-color: #fff
+        &__overlay
+            position: fixed
+            left: 0
+            right: 0
+            top: 0
+            bottom: 0
+            background-color: rgba(38, 38, 38, 0.75)
+            z-index: 100
+            visibility: hidden
+            opacity: 0
+            transition: opacity 0.2s
+            &--visible
+                visibility: visible
+                opacity: 1
+        &__block-top
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            margin-bottom: 46px
+            width: 89px
+            height: 116px
+        &__link-top
+            text-decoration: none
+            font-family: GTEestiProDisplay-Light
+            color: $text-color3
+            font-style: normal
+            font-weight: 350
+            font-size: 14px
+            line-height: 16px
+            letter-spacing: 0.03em
+        &__block-bottom
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            margin-top: 47px
+            margin-bottom: 46px
+            width: 106px
+            height: 166px
+        &__link-bottom
+            text-decoration: none
+            color: $text-color3
+            font-style: normal
+            font-weight: 300
+            font-size: 14px
+            line-height: 16px
+    &-assortment
+        padding: 49px 0 206px 20px
+        &__button
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 109px
+            margin-bottom: 46px
+            font-family: GTEestiProDisplay-Light
+            color: $text-color3
+            font-style: normal
+            font-weight: 350
+            font-size: 14px
+            line-height: 16px
+            letter-spacing: 0.03em
+        &__list
+            width: 330px
+            height: 205px
+        &__item
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 17px 0
+            width: 330px
+        &__costume
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            padding-left: 20px
+            height: 216px
+            &-item
+                list-style-type: none
+            &-link
+                text-decoration: none
+                font-family: GTEestiProDisplay-Light
+                color: $text-color3
+                font-style: normal
+                font-weight: 350
+                font-size: 14px
+                line-height: 16px
+                letter-spacing: 0.03em
+
+
+
