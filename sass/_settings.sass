@@ -1,5 +1,7 @@
 *
     box-sizing: border-box
+// *
+//     transition: all 0.2s
 
 @font-face
     font-family: "GTEestiProDisplay-Thin"
@@ -14,6 +16,7 @@ body
     font-family: "GTEestiProDisplay-Thin"
 img
     max-width: 100%
+
 .container
     width: 1200px
     margin: auto
@@ -21,6 +24,10 @@ img
     padding: auto
     background-color: #000
     cursor: pointer
+    &:hover
+        color: $text-color2
+        border: 1px solid #666666
+        background-color: inherit
 .button-light
     display: flex
     cursor: pointer
@@ -48,22 +55,39 @@ img
     background-color: inherit
     cursor: pointer
 .contacts-button
-    padding: 16px auto
     width: 100%
     height: 50px
     border: none
     color: $text-color2
     background-color: #E5E5E5
     cursor: pointer
+    &:hover
+        background-color: #fff
+        color: $text-color3
 .contacts-form
     display: flex
     justify-content: space-between
     margin-bottom: 24px
     width: 650px
+.input:focus
+    outline: none
 .contacts-input
     padding: 20px 24px
     width: 300px
     height: 60px
     border: none
     background-color: rgba(102, 102, 102, 0.15)
+    color: #fff
+.checkbox
+    &--active
+        &:after
+            content: ''
+            position: absolute
+            left: 34px
+            width: 6px
+            height: 3px
+            border-bottom: 3px solid lighten(#fff, 0)
+            border-left: 3px solid lighten(#fff, 0)
+            transform: translate(-50%, -65%) rotate(-45deg)
+
 

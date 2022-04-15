@@ -1,7 +1,14 @@
 .search
-    // position: absolute
-    // left: 1380px
-    // top: 49px
+    position: absolute
+    left: 1033px
+    top: 40px
+    z-index: 1001
+    background-color: $bg-color1
+    display: none
+    &-wrapper
+        display: flex
+        justify-content: space-between
+        width: 369px
     &-form
         display: flex
         justify-content: space-between
@@ -14,17 +21,22 @@
         border-top: none
         border-left: none
         border-right: none
+        color: #fff
     &-button
         padding: 0
         border: none
         background-color: inherit
+        cursor: pointer
 
 .bag
-    // position: absolute
+    position: absolute
     padding: 45px 200px
     width: 850px
-    // left: 750px
-    // top: 0px
+    right: -108px
+    top: 0
+    z-index: 1001
+    background-color: #fff
+    display: none
     &__line
         margin-bottom: 22px
         width: 450px
@@ -53,8 +65,10 @@
             width: 168px
             height: 180px
             background-image: url(../img/jacket-1.png)
+            background-repeat: no-repeat
             background-position: center
             background-size: 100%
+            border: 1px solid #E5E5E5
         &__text
             display: flex
             flex-direction: column
@@ -113,14 +127,17 @@
             font-size: 16px
             line-height: 19px
             letter-spacing: 0.03em
+            border: none
 
 .contacts
-    // position: absolute
-    // left: 550px
-    // top: 0px
+    position: absolute
+    right: -108px
+    top: 0
+    z-index: 1001
     padding: 40px 200px 70px 200px
     width: 1050px
     background-color: $bg-color1
+    display: none
     &__line
         margin-bottom: 20px
         width: 650px
@@ -131,15 +148,18 @@
     &-title
         display: flex
         justify-content: space-between
-        margin-bottom: 36px
         &__title
-            margin: 0
+            margin-top: 0
+            margin-bottom: 36px
             font-style: normal
             font-weight: 300
             font-size: 40px
             line-height: 46px
             letter-spacing: 0.02em
             color: #BCBCBC
+        &__button
+            width: 19px
+            height: 19px
     &-sign
         &__span
             color: #BCBCBC
@@ -199,10 +219,14 @@
         margin-bottom: 49px
         width: 329px
         &__input
-            background-color: #BCBCBC
-            border: 1px solid inherit
+            appearance: none
+            position: relative
+            background-color: inherit
+            border: 1px solid $text-color2
             width: 17px
             height: 17px
+            &--active
+                background-color: inherit
         &__span
             color: $text-color2
         &__link
@@ -210,9 +234,14 @@
             color: #BCBCBC
 
 .thank
+    position: absolute
+    top: 0
+    right: -108px
+    z-index: 1001
     padding: 47px 200px 50px 200px
     width: 1050px
     background-color: $bg-color1
+    display: none
     &-wrapper
         width: 651px
     &-block
@@ -258,6 +287,8 @@
             margin-bottom: 100px
         &__input
             width: 285px
+            background-color: inherit
+            border: 1px solid $text-color2
         &__image
             position: absolute
             top: 21px

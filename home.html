@@ -11,8 +11,8 @@
     <title>Brioni</title>
 </head>
 <body>
-<!-- 
-    <div class="preloader">
+
+    <!-- <div class="preloader">
         <div class="preloader-wrapper">
         <img class="preloader__img" src="img/hbj 1.png" alt="">
         <span class="preloader__span">Continental Style</span>
@@ -21,42 +21,44 @@
 
 <header class="header">
     <div class="container">
-        <div class="navbar-menu">
+        <div class="navbar">
 
-<button class="menu-button navbar-menu__button">
-    <span class="navbar-menu__line"></span>
-    <span class="navbar-menu__line"></span>
-    <span class="navbar-menu__line"></span>
+<!-- Кнопка меню на мобильной версии -->
+<button class="navbar-button">
+    <span class="navbar-button__line"></span>
+    <span class="navbar-button__line"></span>
+    <span class="navbar-button__line"></span>
 </button>
+<button class="menu-close"></button>
 
-            <div class="navbar-menu__block">
-                <li class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link">Assortment</a></li>
-                <li class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link">Bespoke</a></li>
-                <li class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link">Explore</a></li>
+            <div class="navbar-block">
+                <li class="navbar-block__item">
+                <a href="#" class="navbar-block__link">Assortment</a></li>
+                <li class="navbar-block__item">
+                <a href="#" class="navbar-block__link">Bespoke</a></li>
+                <li class="navbar-block__item">
+                <a href="#" class="navbar-block__link">Explore</a></li>
             </div>
 
-            <a href="#" class="logo">
-                <img class="logo__image" src="img/logo.png" alt="logo: Brioni">
-            </a>
+            <a href="#" class="navbar-logo"></a>
 
             <div class="icon">
-                <a href="#" class="icon__link">
+                <a href="#" class="icon-link icon__search" data-toggle='search'>
                 <img src="img/search.svg" alt="Icon: search" class="icon__image icon__image--mobile_visible"></a>
 
-                <a href="#" class="icon__link">
+                <a href="#" class="icon-link icon__select" data-toggle='select-active'>
                 <img src="img/Select.svg" alt="Icon: select" class="icon__image icon__image--mobile_hidden"></a>
+                <div class="icon-lable icon-select icon-select--active"></div>
 
-                <a href="#" class="icon__link">
+                <a href="#" class="icon-link icon__user" data-toggle='user-active'>
                 <img src="img/user.svg" alt="Icon: user" class="icon__image icon__image--mobile_hidden"></a>
 
-                <a href="#" class="icon__link">
+                <a href="#" class="icon-link icon__backet" data-toggle='backet' data-toggle='backet-active'>
                 <img src="img/backet.svg" alt="Icon: backet" class="icon__image icon__image--mobile_visible"></a>
+                <div class="icon-lable icon-backet icon-backet--active"></div>
             </div>
         </div>
-        <!-- /.navbar-menu -->
+        <!-- /.navbar -->
     </div>
     <!-- /.container -->
 </header>
@@ -64,48 +66,55 @@
 <section class="home">
     <div class="home-wrapper">
         <div class="home-info">
-            <h1 class="home-info__title">Discover your personal Brioni</h1>
+            <div class="home-info__block">
+                <h1 class="home-info__title">Discover your personal 
+                    <a href="#" class="home-info__link">Brioni</a>
+                </h1>
+                <button class="button-dark home-info__button">START SHOPPING</button>
+            </div>
+            <!-- /.home-info__block -->
         </div>
         <!-- /.home__info -->
+        <div class="home-image"></div>
+        <!-- /.home-image -->
     </div>
     <!-- /.home-wrapper -->
 </section>
 
 <section class="collection">
+
     <div class="spring">
-    <div class="spring-wrapper">
-        <div class="spring-info">
-            <h3 class="spring-info__title">Spring collection 2022</h3>
-            <p class="spring-info__text">Meeting modern trends, the Brioni spring-summer 2022 collection offers
-            a reinterpretation of the laid-back Roman style, embodied in a versatile
-            wardrobe. The new silhouettes, evoking a carefree attitude to life, are
-            imbued with respect for the sartorial skill and unsurpassed quality of
-            tailoring, on which the heritage of the House is built.</p>
-            <a href="#" class="spring-info__link">View collection</a>
-        </div>
-        <!-- /.spring-info -->
+        <div class="spring-wrapper">
+            <div class="spring-info">
+                <h3 class="spring-info__title">Spring collection 2022</h3>
+                <p class="spring-info__text">Meeting modern trends, the Brioni spring-summer 2022 collection offers
+                a reinterpretation of the laid-back Roman style, embodied in a versatile
+                wardrobe. The new silhouettes, evoking a carefree attitude to life, are
+                imbued with respect for the sartorial skill and unsurpassed quality of
+                tailoring, on which the heritage of the House is built.</p>
+                <a href="#" class="spring-info__link">View collection</a>
+            </div>
+            <!-- /.spring-info -->
         <img src="img/spring-img.png" alt="Photo: collection" class="spring-image">
+        </div>
+        <!-- /.spring-wrapper -->
     </div>
-    <!-- /.spring-wrapper -->
-</div>
     <!-- /.spring -->
+
     <div class="order">
         <div class="order-wrapper">
             <img src="img/order-img.jpg" alt="Photo: Brioni" class="order-image">
-            <div class="order-block">
-                <div class="order-block__info">
-                    <h3 class="order-block__title">Made to Order</h3>
-                    <p class="order-block__text">Brioni House offers you to discover a new service for making
+            <div class="order-info">
+                    <h3 class="order-info__title">Made to Order</h3>
+                    <p class="order-info__text">Brioni House offers you to discover a new service for making
                         personalized products to order. The service combines our
                         impeccable craftsmanship and your personal preferences.
                         From outerwear to knitwear, shoes, socks and ties - create
                         your favorite Brioni model in the perfect color and design
                         and make it unique by adding your initials.</p>
-                    <a href="#" class="order-block__link">Explore</a>
-                </div>
-                <!-- /.order-info -->
+                    <a href="#" class="order-info__link">Explore</a>
             </div>
-            <!-- /.order-block -->
+            <!-- /.order-info -->
         </div>
         <!-- /.order-wrapper -->
     </div>
@@ -141,35 +150,41 @@
     </div>
 
     <div class="ambassador">
-    <div class="ambassador-wrapper">
-        <div class="ambassador-info">
-            <div class="ambassador-info__block">
-            <p class="ambassador-info__text">“I have always admired the elegant and
-            timeless design of Brioni, the brand embodies
-            uniqueness, quality and excellence.”</p>
-            <span class="ambassador-info__link">House ambassador — Brad Pitt.</span>
+        <div class="ambassador-wrapper">
+            <div class="ambassador-info">
+                <div class="ambassador-info__block">
+                <p class="ambassador-info__text">“I have always admired the elegant and
+                timeless design of Brioni, the brand embodies
+                uniqueness, quality and excellence.”</p>
+                <span class="ambassador-info__link">House ambassador — Brad Pitt.</span>
+                </div>
+                <!-- /.ambassador-info__block -->
+            </div>
+            <!-- /.ambassador-info -->
         </div>
-            <!-- /.ambassador-info__block -->
-        </div>
-        <!-- /.ambassador-info -->
+        <!-- /.ambassador-wrapper -->
     </div>
-    <!-- /.ambassador-wrapper -->
-</div>
     <!-- /.ambassador -->
 </section>
+
 <footer class="footer">
     <div class="container">
-        <!-- Линии на сайте -->
-        <div class="footer__line"></div>
-    <div class="footer-wrapper">
-        <div class="footer-form">
-            <h3 class="footer-form__title">Subscribe to Brioni news</h3>
-            <form action="#" class="footer-form__form">
-                <input type="text" class="footer-form__input" placeholder="Enter e-mail">
-                <img src="img/footer-form__email.svg" alt="e-mail" class="footer-form__image">
-            </form>
-        </div>
-        <!-- /.footer-form -->
+    <!-- Линии на сайте -->
+    <div class="footer__line"></div>
+
+        <div class="footer-wrapper">
+
+            <div class="footer-form">
+                <h3 class="footer-form__title">Subscribe to Brioni news</h3>
+                <form action="#" class="footer-form__form">
+                    <input type="email" class="input footer-form__input" placeholder="Enter e-mail">
+                    <img src="img/footer-form__email.svg" alt="e-mail" class="footer-form__image">
+                    <img src="img/grey-envelope.svg" alt="e-mail" class="footer-form__image footer-form__image--grey">
+                    <img src="img/red-envelope.svg" alt="e-mail" class="footer-form__image footer-form__image--red">
+                </form>
+            </div>
+            <!-- /.footer-form -->
+
         <div class="footer-info">
             <div class="footer-info__custumer">
                 <h3 class="footer-info__title">Customer Service</h3>
@@ -226,14 +241,14 @@
 
 <!-- МОДАЛЬНЫЕ ОКНА -->
 
+<div class="overlay"></div>
+
 <div class="menu menu-mobile">
 
-    <div class="menu menu-mobile__overlay"></div>
-
     <div class="menu-mobile__block-top">
-        <a href="" class="menu-mobile__link-top">ASSORTMENT</a>
-        <a href="" class="menu-mobile__link-top">BESPOKE</a>
-        <a href="" class="menu-mobile__link-top">EXPLORE</a>
+        <a href="#" class="menu-mobile__link-top">ASSORTMENT</a>
+        <a href="#" class="menu-mobile__link-top">BESPOKE</a>
+        <a href="#" class="menu-mobile__link-top">EXPLORE</a>
     </div>
 
     <div class="menu__line"></div>
@@ -249,65 +264,72 @@
 
 </div>
 <!-- /.menu-mobile -->
-<div class="menu menu-assortment">
-    
-    <button class="menu-button menu-assortment__button">
-        <img src="img/arrow-left.svg" alt="arrow left" class="menu-assortment__button-image">
-        ASSORTMENT
-    </button>
 
-    <div class="menu-assortment__list">
-        <div class="menu__line"></div>
-        <button class="menu-button menu-assortment__item">Costume collection
-            <img class="menu-button__image" src="img/arrow-down.svg" alt="arrow down">
+        <div class="menu menu-assortment">
+
+        <button class="menu-button menu-assortment__button">
+            <img src="img/arrow-left.svg" alt="arrow left" class="menu-assortment__button-image">ASSORTMENT
         </button>
-        <div class="menu__line"></div>
-        <button class="menu-button menu-assortment__item">Leisure wear
-            <img class="menu-button__image" src="img/arrow-down.svg" alt="arrow down">
-        </button>
-        <div class="menu__line"></div>
-        <button class="menu-button menu-assortment__item">Accessories
-            <img class="menu-button__image" src="img/arrow-down.svg" alt="arrow down">
-        </button>
-        <div class="menu__line"></div>
-        <button class="menu-button menu-assortment__item">Shoes
-            <img class="menu-button__image" src="img/arrow-down.svg" alt="arrow down">
-        </button>
-        <div class="menu__line"></div>
+
+        <div class="menu-assortment__list">
+            <div class="menu__line"></div>
+
+            <div class="menu-assortment__accordion">
+                <button class="menu-button menu-assortment__item">Costume collection
+                    <img class="menu-button__image" src="img/arrow-down.svg" alt="arrow down">
+                </button>
+
+            <div class="menu-costume">
+                <div class="menu-costume__block">
+                    <li class="menu-costume__item">
+                        <a href="#" class="menu-costume__link">COSTUMES</a></li>
+                    <li class="menu-costume__item">
+                        <a href="#" class="menu-costume__link">JACKETS</a></li>
+                    <li class="menu-costume__item">
+                        <a href="#" class="menu-costume__link">TROUSERS</a></li>
+                    <li class="menu-costume__item">
+                        <a href="#" class="menu-costume__link">COAT</a></li>
+                    <li class="menu-costume__item">
+                        <a href="#" class="menu-costume__link">SHIRTS</a></li>
+                    <li class="menu-costume__item">
+                        <a href="#" class="menu-costume__link">TUXEDOS</a></li>
+                </div>
+                <!-- /.menu-costume__block -->
+            </div>
+            <!-- /.menu menu-costume -->
+            </div>
+            <!-- /.menu-assortment__accordion -->
+            <div class="menu__line"></div>
+            <button class="menu-button menu-assortment__item">Leisure wear
+                <img class="menu-button__image" src="img/arrow-down.svg" alt="arrow down">
+            </button>
+            <div class="menu__line"></div>
+            <button class="menu-button menu-assortment__item">Accessories
+                <img class="menu-button__image" src="img/arrow-down.svg" alt="arrow down">
+            </button>
+            <div class="menu__line"></div>
+            <button class="menu-button menu-assortment__item">Shoes
+                <img class="menu-button__image" src="img/arrow-down.svg" alt="arrow down">
+            </button>
+            <div class="menu__line"></div>
+        </div>
+        <!-- menu-assortment__list -->
     </div>
-</div>
-<!-- /.menu menu-assortment -->
-
-<div class="menu menu-assortment__costume">
-    
-    <li class="menu-assortment__costume-item">
-        <a href="#" class="menu-assortment__costume-link">COSTUMES</a></li>
-
-    <li class="menu-assortment__costume-item">
-        <a href="#" class="menu-assortment__costume-link">JACKETS</a></li>
-
-    <li class="menu-assortment__costume-item">
-        <a href="#" class="menu-assortment__costume-link">TROUSERS</a></li>
-
-    <li class="menu-assortment__costume-item">
-        <a href="#" class="menu-assortment__costume-link">COAT</a></li>
-
-    <li class="menu-assortment__costume-item">
-        <a href="#" class="menu-assortment__costume-link">SHIRTS</a></li>
-
-    <li class="menu-assortment__costume-item">
-        <a href="#" class="menu-assortment__costume-link">TUXEDOS</a></li>
-
-</div>
-<!-- /.menu menu-assortment__costume -->
+    <!-- /.menu menu-assortment -->
 
 <div class="search">
+    <div class="search-wrapper">
+    <a href="#" class="icon__link">
+        <img src="img/search.svg" alt="Icon: search" class="icon__imagicon__image--mobile_visible">
+    </a>
     <form action="#" class="search-form">
-        <input type="text" class="search-input" placeholder="Search">
+        <input type="text" class="input search-input" placeholder="Search">
         <button class="search-button">
             <img src="img/close-search.svg" alt="close" class="search-button__image">
         </button>
     </form>
+    </div>
+<!-- /.search-wrapper -->
 </div>
 <!-- /.search -->
 
@@ -368,8 +390,8 @@ and cotton</h3>
             <a href="#" class="contacts-sign__link">Sign in</a>
 
                     <form action="#" class="contacts-form contacts-sign__form">
-                        <input type="text" class="contacts-input contacts-sign__input"placeholder="Enter e-mail">
-                        <input type="text" class="contacts-input contacts-sign__input"placeholder="Phone number">
+                        <input type="text" class="input contacts-input contacts-sign__input"placeholder="Enter e-mail">
+                        <input type="text" class="input contacts-input contacts-sign__input"placeholder="Phone number">
                     </form>
                 <!-- /.contacts-sign__form -->
 
@@ -379,22 +401,22 @@ and cotton</h3>
             <h3 class="contacts-address__title">Shipping address</h3>
 
                     <form action="#" class="contacts-form contacts-address__form">
-                        <input type="text" class="contacts-input contacts-address__input"placeholder="First name">
-                        <input type="text" class="contacts-input contacts-address__input"placeholder="Last name">
+                        <input type="text" class="input contacts-input contacts-address__input"placeholder="First name">
+                        <input type="text" class="input contacts-input contacts-address__input"placeholder="Last name">
                     </form>
                     <form action="#" class="contacts-form contacts-address__form">
-                        <input type="text" class="contacts-input contacts-address__input"placeholder="Country">
-                        <input type="text" class="contacts-input contacts-address__input"placeholder="Postal code">
+                        <input type="text" class="input contacts-input contacts-address__input"placeholder="Country">
+                        <input type="text" class="input contacts-input contacts-address__input"placeholder="Postal code">
                     </form>
                     <form action="#" class="contacts-form contacts-address__form">
-                        <input type="text" class="contacts-input contacts-address__input"placeholder="Region">
-                        <input type="text" class="contacts-input contacts-address__input"placeholder="City">
+                        <input type="text" class="input contacts-input contacts-address__input"placeholder="Region">
+                        <input type="text" class="input contacts-input contacts-address__input"placeholder="City">
                     </form>
                     <form action="#" class="contacts-form contacts-address__form">
-                        <input type="text" class="contacts-input contacts-address__input"placeholder="Street address">
-                        <input type="text" class="contacts-input contacts-address__input"placeholder="Appartment">
+                        <input type="text" class="input contacts-input contacts-address__input"placeholder="Street address">
+                        <input type="text" class="input contacts-input contacts-address__input"placeholder="Appartment">
                     </form>
-                    <textarea name="#" placeholder="Comment" class="contacts-input contacts-address__comment"></textarea>
+                    <textarea name="#" placeholder="Comment" class="input contacts-input contacts-address__comment"></textarea>
         </div>
         <!-- /.contacts-address -->
         </div>
@@ -418,7 +440,7 @@ shipment arrives to settle any charges for final delivery.</p>
         <!-- /.contacts-info -->
 
         <div class="contacts-checkbox">
-            <input class="contacts-checkbox__input" type="checkbox">
+            <input class="checkbox contacts-checkbox__input" type="checkbox">
             <span class="contacts-checkbox__span" >
                 <a href="#" class="contacts-checkbox__link">I agree to the</a> processing of personal data</span>
         </div>
@@ -450,7 +472,7 @@ contact us by writing to <a href="#" class="thank-info__link">our e-mail.</a></p
         <div class="thank-form">
             <h2 class="thank-form__title">Subscribe to Brioni news</h2>
             <form action="#" class="contacts-form thank-form__form">
-                <input type="text" class="contacts-input thank-form__input"placeholder="Enter e-mail">
+                <input type="text" class="input contacts-input thank-form__input"placeholder="Enter e-mail">
                 <img src="img/footer-form__email.svg" alt="e-mail" class="thank-form__image">
             </form>
         </div>
@@ -459,12 +481,6 @@ contact us by writing to <a href="#" class="thank-info__link">our e-mail.</a></p
     <!-- /.thank-wrapper -->
 </div>
 <!-- /.thank -->
-
-<!-- <label class="checkbox style-a">
-  <input class="checkbox" checked type="checkbox"/>
-  <div class="checkbox__checkmark"></div>
-  <div class="checkbox__body">Style A</div>
-</label> -->
 
 
     <script src="js/swiper-bundle.min.js"></script>

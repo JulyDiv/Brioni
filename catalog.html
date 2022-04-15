@@ -12,52 +12,7 @@
     <title>Brioni</title>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="navbar-menu">
 
-                <button class="navbar-menu__button">
-                    <span class="navbar-menu__line"></span>
-                    <span class="navbar-menu__line"></span>
-                    <span class="navbar-menu__line"></span>
-                </button>
-
-                <div class="navbar-menu__block">
-                    <li class="navbar-menu__item">
-                        <a href="#" class="navbar-menu__link">Assortment</a>
-                    </li>
-                    <li class="navbar-menu__item">
-                        <a href="#" class="navbar-menu__link">Bespoke</a>
-                    </li>
-                    <li class="navbar-menu__item">
-                        <a href="#" class="navbar-menu__link">Explore</a>
-                    </li>
-                </div>
-
-                <a href="http://127.0.0.1:5500/home.html#" class="logo">
-                    <img class="logo__image" src="img/logo.png" alt="logo: Brioni">
-                </a>
-
-                <div class="icon">
-                    <a href="#" class="icon__link">
-                        <img src="img/search.svg" alt="Icon: search"
-                            class="icon__image icon__image--mobile_visible"></a>
-
-                    <a href="#" class="icon__link">
-                        <img src="img/Select.svg" alt="Icon: select" class="icon__image icon__image--mobile_hidden"></a>
-
-                    <a href="#" class="icon__link">
-                        <img src="img/user.svg" alt="Icon: user" class="icon__image icon__image--mobile_hidden"></a>
-
-                    <a href="#" class="icon__link">
-                        <img src="img/backet.svg" alt="Icon: backet"
-                            class="icon__image icon__image--mobile_visible"></a>
-                </div>
-            </div>
-            <!-- /.navbar-menu -->
-        </div>
-        <!-- /.container -->
-    </header>
     <section class="catalog" id="catalog">
     <div class="container">
     <nav class="catalog-breadcrumb">
@@ -80,73 +35,176 @@
         </p>
         <!-- /.catalog-text -->
         <div class="button-light catalog__button-light">
-                <button class="character-button catalog__character-button">Filter
+                <button class="character-button catalog__character-button" data-toggle="filter">Filter
                     <img class="button-image catalog__button-image" src="img/arrow-down.svg" alt="arrow">
                 </button>
-                <button class="character-button catalog__character-button">Sort
+                <button class="character-button catalog__character-button"data-toggle="sort">Sort
                     <img class="button-image catalog__button-image" src="img/arrow-down.svg" alt="arrow">
                 </button>
-            </div>
+        </div>
 
         <div class="character">
             <div class="character__color-size">
             <div class="character__block">
                 <span class="character__span">Color</span>
-                <button class="character__button js-select">
+                <button class="character__button" data-button="color">
                     <img class="character__image" src="img/arrow-down.svg" alt="arrow down">
                 </button>
-                <div class="character-dropdown js-dropdown">
+                <div class="character-dropdown character-dropdown__color" data-character="color">
                 <div class="character-dropdown__option-list">
+                    
                     <div class="character-dropdown__option-item">
                         <input class="character-dropdown__checkbox" type="checkbox">
+                        <div class="checkbox"></div>
                         <label class="character-dropdown__label">White</label>
                     </div>
 
                     <div class="character-dropdown__option-item">
                         <input class="character-dropdown__checkbox" type="checkbox">
+                        <div class="checkbox"></div>
                         <label class="character-dropdown__label">Black</label>
                     </div>
 
                     <div class="character-dropdown__option-item">
                         <input class="character-dropdown__checkbox" type="checkbox">
+                        <div class="checkbox"></div>
                         <label class="character-dropdown__label">Beige</label>
                     </div>
 
                     <div class="character-dropdown__option-item">
                         <input class="character-dropdown__checkbox" type="checkbox">
+                        <div class="checkbox"></div>
                         <label class="character-dropdown__label">Gold</label>
                     </div>
 
                     <div class="character-dropdown__option-item">
                         <input class="character-dropdown__checkbox" type="checkbox">
+                        <div class="checkbox"></div>
                         <label class="character-dropdown__label">Brown</label>
                     </div>
 
                     <div class="character-dropdown__option-item">
                         <input class="character-dropdown__checkbox" type="checkbox">
+                        <div class="checkbox"></div>
                         <label class="character-dropdown__label">Blue</label>
                     </div>
 
                     <div class="character-dropdown__option-item">
                         <input class="character-dropdown__checkbox" type="checkbox">
+                        <div class="checkbox"></div>
                         <label class="character-dropdown__label">Grey</label>
                     </div>
                 </div>
+                <!-- character-dropdown__option-list -->
                 </div>
+                <!-- character-dropdown character-dropdown__color -->
             </div>
+            <!-- character__block -->
             <div class="character__block">
                 <span class="character__span">Size</span>
-                <button class="character__button">
+                <button class="character__button" data-button="size">
                     <img class="character__image" src="img/arrow-down.svg" alt="arrow down">
                 </button>
+                <div class="character-dropdown character-dropdown__size" data-character="size">
+                <div class="character-dropdown__option-list">
+                    <div class="character-dropdown__option-item">
+                        <input class="character-dropdown__checkbox" type="checkbox">
+                        <div class="checkbox"></div>
+                        <label class="character-dropdown__label">44</label>
+                    </div>
+
+                    <div class="character-dropdown__option-item">
+                        <input class="character-dropdown__checkbox" type="checkbox">
+                        <div class="checkbox"></div>
+                        <label class="character-dropdown__label">46</label>
+                    </div>
+
+                    <div class="character-dropdown__option-item">
+                        <input class="character-dropdown__checkbox" type="checkbox">
+                        <div class="checkbox"></div>
+                        <label class="character-dropdown__label">48</label>
+                    </div>
+
+                    <div class="character-dropdown__option-item">
+                        <input class="character-dropdown__checkbox" type="checkbox">
+                        <div class="checkbox"></div>
+                        <label class="character-dropdown__label">50</label>
+                    </div>
+
+                    <div class="character-dropdown__option-item">
+                        <input class="character-dropdown__checkbox" type="checkbox">
+                        <div class="checkbox"></div>
+                        <label class="character-dropdown__label">52</label>
+                    </div>
+
+                    <div class="character-dropdown__option-item">
+                        <input class="character-dropdown__checkbox" type="checkbox">
+                        <div class="checkbox"></div>
+                        <label class="character-dropdown__label">54</label>
+                    </div>
+
+                    <div class="character-dropdown__option-item">
+                        <input class="character-dropdown__checkbox" type="checkbox">
+                        <div class="checkbox"></div>
+                        <label class="character-dropdown__label">56</label>
+                    </div>
+
+                    <div class="character-dropdown__option-item">
+                        <input class="character-dropdown__checkbox" type="checkbox">
+                        <div class="checkbox"></div>
+                        <label class="character-dropdown__label">58</label>
+                    </div>
+
+                    <div class="character-dropdown__option-item">
+                        <input class="character-dropdown__checkbox" type="checkbox">
+                        <div class="checkbox"></div>
+                        <label class="character-dropdown__label">60</label>
+                    </div>
+                </div>
+                <!-- character-dropdown__option-list -->
+                </div>
+                <!-- character-dropdown character-dropdown__size -->
             </div>
+            <!-- character__block -->
             </div>
+            <!-- character__color-size -->
             <div class="character__block">
                 <span class="character__span">Sort</span>
-                <button class="character__button">
+                <button class="character__button"data-button="sort">
                     <img class="character__image" src="img/arrow-down.svg" alt="arrow down">
                 </button>
+                <div class="character-dropdown character-dropdown__sort" data-character="sort">
+                <div class="character-dropdown__option-list character-dropdown__option-list_sort">
+                    <div class="character-dropdown__option-item">
+                        <input class="character-dropdown__checkbox" type="checkbox">
+                        <div class="checkbox"></div>
+                        <label class="character-dropdown__label">New Arrivals</label>
+                    </div>
+
+                    <div class="character-dropdown__option-item">
+                        <input class="character-dropdown__checkbox" type="checkbox">
+                        <div class="checkbox"></div>
+                        <label class="character-dropdown__label">Price : Ascending</label>
+                    </div>
+
+                    <div class="character-dropdown__option-item">
+                        <input class="character-dropdown__checkbox" type="checkbox">
+                        <div class="checkbox"></div>
+                        <label class="character-dropdown__label">Price : Descending</label>
+                    </div>
+
+                    <div class="character-dropdown__option-item">
+                        <input class="character-dropdown__checkbox" type="checkbox">
+                        <div class="checkbox"></div>
+                        <label class="character-dropdown__label">Featured</label>
+                    </div>
+
+                </div>
+                <!-- character-dropdown__option-list character-dropdown__option-list_sort -->
+                </div>
+                <!-- character-dropdown character-dropdown__sort -->
             </div>
+            <!-- character__block -->
             
         </div>
         <!-- /.character -->
@@ -163,7 +221,8 @@
                 </div>
                 <div class="catalog-assortment__info">
                     <span class="catalog-assortment__text">Travel jacket in cashmere and cotton</span>
-                    <img src="img/select-catalog.svg" alt="Icon: select">
+                    <img class="catalog-assortment__icon" src="img/select-catalog.svg" alt="Icon: select">
+                    <img class="catalog-assortment__icon catalog-assortment__icon--active" src="img/select-active.svg" alt="Icon: select">
                 </div>
                 <span class="catalog-assortment__price">€ 1.379,51</span>
             </div>
@@ -174,7 +233,8 @@
                 </div>
                 <div class="catalog-assortment__info">
                     <span class="catalog-assortment__text">Escorial Wool Blazer</span>
-                    <img src="img/select-catalog.svg" alt="Icon: select">
+                    <img class="catalog-assortment__icon" src="img/select-catalog.svg" alt="Icon: select">
+                    <img class="catalog-assortment__icon catalog-assortment__icon--active" src="img/select-active.svg" alt="Icon: select">
                 </div>
                 <span class="catalog-assortment__price">€ 1.244,27</span>
             </div>
@@ -185,7 +245,8 @@
                 </div>
                 <div class="catalog-assortment__info">
                     <span class="catalog-assortment__text">Sea Island Cotton Jacket</span>
-                    <img src="img/select-catalog.svg" alt="Icon: select">
+                    <img class="catalog-assortment__icon" src="img/select-catalog.svg" alt="Icon: select">
+                    <img class="catalog-assortment__icon catalog-assortment__icon--active" src="img/select-active.svg" alt="Icon: select">
                 </div>
                 <span class="catalog-assortment__price">€ 973,78</span>
             </div>
@@ -196,7 +257,8 @@
                 </div>
                 <div class="catalog-assortment__info">
                     <span class="catalog-assortment__text">Super Plume jacket made of flannel wool</span>
-                    <img src="img/select-catalog.svg" alt="Icon: select">
+                    <img class="catalog-assortment__icon" src="img/select-catalog.svg" alt="Icon: select">
+                    <img class="catalog-assortment__icon catalog-assortment__icon--active" src="img/select-active.svg" alt="Icon: select">
                 </div>
                 <span class="catalog-assortment__price">€ 865,58</span>
             </div>
@@ -207,7 +269,8 @@
                 </div>
                 <div class="catalog-assortment__info">
                     <span class="catalog-assortment__text">Super Plume jacket in cotton corduroy</span>
-                    <img src="img/select-catalog.svg" alt="Icon: select">
+                    <img class="catalog-assortment__icon" src="img/select-catalog.svg" alt="Icon: select">
+                    <img class="catalog-assortment__icon catalog-assortment__icon--active" src="img/select-active.svg" alt="Icon: select">
                 </div>
                 <span class="catalog-assortment__price">€ 1.803,27</span>
             </div>
@@ -218,7 +281,8 @@
                 </div>
                 <div class="catalog-assortment__info">
                     <span class="catalog-assortment__text">Virgilio jacket in silk and wool</span>
-                    <img src="img/select-catalog.svg" alt="Icon: select">
+                    <img class="catalog-assortment__icon" src="img/select-catalog.svg" alt="Icon: select">
+                    <img class="catalog-assortment__icon catalog-assortment__icon--active" src="img/select-active.svg" alt="Icon: select">
                 </div>
                 <span class="catalog-assortment__price">€ 4.147,54</span>
             </div>
@@ -229,7 +293,8 @@
                 </div>
                 <div class="catalog-assortment__info">
                     <span class="catalog-assortment__text">Natural wool travel jacket</span>
-                    <img src="img/select-catalog.svg" alt="Icon: select">
+                    <img class="catalog-assortment__icon" src="img/select-catalog.svg" alt="Icon: select">
+                    <img class="catalog-assortment__icon catalog-assortment__icon--active" src="img/select-active.svg" alt="Icon: select">
                 </div>
                 <span class="catalog-assortment__price">€ 3.786,88</span>
             </div>
@@ -240,7 +305,8 @@
                 </div>
                 <div class="catalog-assortment__info">
                     <span class="catalog-assortment__text">Ravello jacket in cashmere and silk</span>
-                    <img src="img/select-catalog.svg" alt="Icon: select">
+                    <img class="catalog-assortment__icon" src="img/select-catalog.svg" alt="Icon: select">
+                    <img class="catalog-assortment__icon catalog-assortment__icon--active" src="img/select-active.svg" alt="Icon: select">
                 </div>
                 <span class="catalog-assortment__price">€ 4.012,29</span>
             </div>
@@ -251,7 +317,8 @@
                 </div>
                 <div class="catalog-assortment__info">
                     <span class="catalog-assortment__text">Ravello jacket in sustainable cashmere</span>
-                    <img src="img/select-catalog.svg" alt="Icon: select">
+                    <img class="catalog-assortment__icon" src="img/select-catalog.svg" alt="Icon: select">
+                    <img class="catalog-assortment__icon catalog-assortment__icon--active" src="img/select-active.svg" alt="Icon: select">
                 </div>
                 <span class="catalog-assortment__price">€ 4.553,27</span>
             </div>
@@ -263,85 +330,10 @@
     <!-- .container -->
     </section>
     <!-- /.catalog -->
-<footer class="footer">
-    <div class="container">
-                <!-- Линии на сайте -->
-                <div class="footer__line"></div>
-        <div class="footer-wrapper">
-            <div class="footer-form">
-                <h3 class="footer-form__title">Subscribe to Brioni news</h3>
-                <form action="#" class="footer-form__form">
-                    <input type="text" class="footer-form__input" placeholder="Enter e-mail">
-                    <img src="img/footer-form__email.svg" alt="e-mail" class="footer-form__image">
-                </form>
-            </div>
-            <!-- /.footer-form -->
-            <div class="footer-info">
-                <div class="footer-info__custumer">
-                    <h3 class="footer-info__title">Customer Service</h3>
-                    <ul
-                        class="footer-info__list footer-info__block-customer footer-info__block-customer--mobile_hidden">
-                        <li class="footer-info__item"><a href="#" class="footer-info__link">Delivery</a></li>
-                        <li class="footer-info__item"><a href="#" class="footer-info__link">Orders and Returns</a></li>
-                        <li class="footer-info__item"><a href="#" class="footer-info__link">Exclusive Services</a></li>
-                        <li class="footer-info__item"><a href="#" class="footer-info__link">Find a Boutique</a></li>
-                        <li class="footer-info__item"><a href="#" class="footer-info__link">Write to us</a></li>
-                        <li class="footer-info__item"><a href="#" class="footer-info__link">FAQ</a></li>
-                    </ul>
-                </div>
-                <!-- /.footer-info__custumer -->
-                <div class="footer-info__about">
-                    <h3 class="footer-info__title">About Brioni</h3>
-                    <ul class="footer-info__list footer-info__block-about footer-info__block-about--mobile_hidden">
-                        <li class="footer-info__item"><a href="#" class="footer-info__link">Our Company</a></li>
-                        <li class="footer-info__item"><a href="#" class="footer-info__link">Atelier Brioni</a></li>
-                        <li class="footer-info__item"><a href="#" class="footer-info__link">The World of Bespoke</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.footer-info__about -->
-                <div class="footer-info__general">
-                    <h3 class="footer-info__title">General information</h3>
-                    <ul class="footer-info__list footer-info__block-general footer-info__block-general--mobile_hidden">
-                        <li class="footer-info__item"><a href="#" class="footer-info__link">Legal Section</a></li>
-                        <li class="footer-info__item"><a href="#" class="footer-info__link">Investor Relations</a></li>
-                        <li class="footer-info__item"><a href="#" class="footer-info__link">Privacy Policy</a></li>
-                        <li class="footer-info__item"><a href="#" class="footer-info__link">Sustainable Development</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.footer-info__geneal -->
-                <div class="footer-info__follows">
-                    <h3 class="footer-info__title">Follow us</h3>
-                    <div class="footer-info__follows-links">
-                        <a href="#" class="footer-info__link"><img class="footer-info__image" src="img/Facebook.svg"
-                                alt="Icon:Facebook"></a>
-                        <a href="#" class="footer-info__link"><img class="footer-info__image" src="img/Twitter.svg"
-                                alt="Icon:Twitter"></a>
-                        <a href="#" class="footer-info__link"><img class="footer-info__image" src="img/Instagram.svg"
-                                alt="Icon:Instagram"></a>
-                        <a href="#" class="footer-info__link"><img class="footer-info__image" src="img/Google.svg"
-                                alt="Icon:Google"></a>
-                        <a href="#" class="footer-info__link"><img class="footer-info__image" src="img/YouTube.svg"
-                                alt="Icon:YouTube"></a>
-                    </div>
-                    <!-- /.footer-info__follows-links -->
-                </div>
-                <!-- /.footer-info__follows -->
-            </div>
-            <!-- /.footer-info -->
-            <div class="footer__line"></div>
-            <span class="footer__span">2022 © Brioni</span>
-        </div>
-        <!-- /.footer-wrapper -->
-    </div>
-    <!-- /.container -->
-</footer>
 
-<script src="js/swiper-bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/main.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

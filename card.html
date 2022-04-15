@@ -13,138 +13,99 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="navbar-menu">
 
-                <button class="navbar-menu__button">
-                    <span class="navbar-menu__line"></span>
-                    <span class="navbar-menu__line"></span>
-                    <span class="navbar-menu__line"></span>
-                </button>
+<section class="card">
+    <div class="container">
 
-                <div class="navbar-menu__block">
-                    <li class="navbar-menu__item">
-                        <a href="#" class="navbar-menu__link">Assortment</a>
-                    </li>
-                    <li class="navbar-menu__item">
-                        <a href="#" class="navbar-menu__link">Bespoke</a>
-                    </li>
-                    <li class="navbar-menu__item">
-                        <a href="#" class="navbar-menu__link">Explore</a>
-                    </li>
+        <nav class="card-breadcrumb">
+            <ul class="card-breadcrumb__list">
+                <li class="card-breadcrumb__item">
+                    <a href="http://127.0.0.1:5500/catalog.html" class="card-breadcrumb__link">Assortment</a>
+                </li>
+                <li class="card-breadcrumb__item">
+                    <a href="#" class="card-breadcrumb__link">Costume collection</a>
+                </li>
+                <li class="card-breadcrumb__item">
+                    <a href="#" class="card-breadcrumb__link">Jackets</a>
+                </li>
+                <li class="card-breadcrumb__item">Jacket Travel</li>
+            </ul>
+        </nav>
+        <!-- /.breadcrumb -->
+
+    <!-- Линии на сайте -->
+    <div class="card__line"></div>
+
+        <div class="card-wrapper">
+
+            <div class="card-jackets">
+                <!-- <div class="card-choice">
+                    <img src="img/card-choice-1.png" alt="jackets" class="card-choice__image card-choice__image_1">
+                    <img src="img/card-choice-2.png" alt="jackets" class="card-choice__image card-choice__image_2">
+                    <img src="img/card-choice-3.png" alt="jackets" class="card-choice__image card-choice__image_3">
+                    <img src="img/card-choice-4.jpg" alt="jackets" class="card-choice__image card-choice__image_4">
+                    <img src="img/card-choice-5.jpg" alt="jackets" class="card-choice__image card-choice__image_5">
+                </img> -->
+                <div class="card-choice">
+                    <div class="card-choice__image card-choice__image_1"></div>
+                    <div class="card-choice__image card-choice__image_2"></div>
+                    <div class="card-choice__image card-choice__image_3"></div>
+                    <div class="card-choice__image card-choice__image_4"></div>
+                    <div class="card-choice__image card-choice__image_5"></div>
                 </div>
-
-                <a href="http://127.0.0.1:5500/home.html#" class="logo">
-                    <img class="logo__image" src="img/logo.png" alt="logo: Brioni">
-                </a>
-
-                <div class="icon">
-                    <a href="#" class="icon__link">
-                        <img src="img/search.svg" alt="Icon: search"
-                            class="icon__image icon__image--mobile_visible"></a>
-
-                    <a href="#" class="icon__link">
-                        <img src="img/Select.svg" alt="Icon: select" class="icon__image icon__image--mobile_hidden"></a>
-
-                    <a href="#" class="icon__link">
-                        <img src="img/user.svg" alt="Icon: user" class="icon__image icon__image--mobile_hidden"></a>
-
-                    <a href="#" class="icon__link">
-                        <img src="img/backet.svg" alt="Icon: backet"
-                            class="icon__image icon__image--mobile_visible"></a>
-                </div>
+                <!-- /.card-choice -->
+            <div class="card-main"></div>
+            <!-- /.main -->
             </div>
-            <!-- /.navbar-menu -->
-        </div>
-        <!-- /.container -->
-    </header>
-            <section class="card">
-                <div class="container">
-                    <nav class="card-breadcrumb">
-                        <ul class="card-breadcrumb__list">
-                            <li class="card-breadcrumb__item">
-                                <a href="http://127.0.0.1:5500/catalog.html" class="card-breadcrumb__link">Assortment</a>
-                            </li>
-                            <li class="card-breadcrumb__item">
-                                <a href="#" class="card-breadcrumb__link">Costume collection</a>
-                            </li>
-                            <li class="card-breadcrumb__item">
-                                <a href="#" class="card-breadcrumb__link">Jackets</a>
-                            </li>
-                            <li class="card-breadcrumb__item">
-                                Jacket Travel
-                            </li>
-                        </ul>
-                    </nav>
-                    <!-- /.breadcrumb -->
+            <!-- /.card-jackets -->
 
-                    <!-- Линии на сайте -->
-                    <div class="catalog__line"></div>
+            <div class="card-info">
 
-                    <div class="card-wrapper">
+                <div class="card-info__select">
+                    <span class="card-info__articl">Product Code UJIG0LO16031100</span>
+                    <img src="img/select-catalog.svg" alt="Icon: select">
+                </div>
+                 <!-- /.card-info__select -->
 
-                        <div class="card-jackets">
-                        <div class="card-choice">
-                            <img src="img/card-choice-1.png" alt="" class="card-choice__image">
-                            <img src="img/card-choice-2.png" alt="" class="card-choice__image">
-                            <img src="img/card-choice-3.png" alt="" class="card-choice__image">
-                            <img src="img/card-choice-4.jpg" alt="" class="card-choice__image">
-                            <img src="img/card-choice-5.jpg" alt="" class="card-choice__image">
+                <div class="card-info__name">
+                    <h3 class="card-info__title">Dark grey cashmere and cotton Travel jacket</h3>
+                    <span class="card-info__price">€ 1.379,51</span>
+                </div>
+                <!-- /.card-info__name -->
+
+                <div class="card-info__color">
+                    <div class="card-info__line"></div>
+
+                    <span class="card-info__choose">Choose your color</span>
+                        <div class="card-info__color-block">
+                            <div class="card-info__grey"></div>
+                            <div class="card-info__black"></div>
                         </div>
-                        <!-- /.card-choice -->
+                        <div class="card-info__color-name">
+                            <span class="card-info__item">Dark grey</span>
+                            <span class="card-info__item">Black</span>
+                        </div>
 
-                        <div class="card-main"></div>
-                        <!-- /.main -->
-                    </div>
-                        <!-- /.card-jackets -->
+                    <div class="card-info__line"></div>
+                </div>
+                <!-- /.card-color -->
 
-                        <div class="card-info">
-                            <div class="card-info__select">
-                                <span class="card-info__articl">Product Code UJIG0LO16031100</span>
-                                <img src="img/select-catalog.svg" alt="Icon: select">
-                            </div>
-                            <!-- /.card-info__select -->
-
-                            <div class="card-info__name">
-                                <h3 class="card-info__title">Dark grey cashmere and cotton
-                                Travel jacket</h3>
-                                <span class="card-info__price">€ 1.379,51</span>
-                            </div>
-                            <!-- /.card-info__name -->
-
-                            <div class="card-info__color">
-                                <div class="card-info__line"></div>
-                                <span class="card-info__choose">Choose your color</span>
-                                <div class="card-info__color-block">
-                                    <div class="card-info__grey"></div>
-                                    <div class="card-info__black"></div>
-                                </div>
-                                <div class="card-info__color-name">
-                                    <span class="card-info__item">Dark grey</span>
-                                    <span class="card-info__item">Black</span>
-                                </div>
-                                <div class="card-info__line"></div>
-                            </div>
-                            <!-- /.card-color -->
-                            
-
-                            <div class="card-info__size">
-                                <span class="card-info__choose">Choose your size</span>
-                                <div class="card-info__size-block">
-                                    <span class="card-info__size-item">44</span>
-                                    <span class="card-info__size-item">46</span>
-                                    <span class="card-info__size-item">48</span>
-                                    <span class="card-info__size-item">50</span>
-                                    <span class="card-info__size-item card-info__size-item-52">52</span>
-                                    <span class="card-info__size-item">54</span>
-                                    <span class="card-info__size-item card-info__size-item-56">56</span>
-                                    <span class="card-info__size-item card-info__size-item-58">58</span>
-                                    <span class="card-info__size-item card-info__size-item-60">60</span>
-                                </div>
-                                <div class="card-info__line"></div>
-                            </div>
-                            <!-- /.card-size -->
+                <div class="card-info__size">
+                    <span class="card-info__choose">Choose your size</span>
+                        <div class="card-info__size-block">
+                            <span class="card-info__size-item">44</span>
+                            <span class="card-info__size-item">46</span>
+                            <span class="card-info__size-item">48</span>
+                            <span class="card-info__size-item">50</span>
+                            <span class="card-info__size-item card-info__size-item-52">52</span>
+                            <span class="card-info__size-item">54</span>
+                            <span class="card-info__size-item card-info__size-item-56">56</span>
+                            <span class="card-info__size-item card-info__size-item-58">58</span>
+                            <span class="card-info__size-item card-info__size-item-60">60</span>
+                        </div>
+                            <div class="card-info__line"></div>
+                </div>
+                <!-- /.card-info__size -->
 
                             <div class="swiper swiper3">
                     <div class="swiper-wrapper">
@@ -181,42 +142,44 @@
                     </div>
 
                     <div class="swiper-scrollbar swiper3-scrollbar3"></div>
-                </div>
+                            </div>
 
                 <div class="button-light card-info__button-light">
+
                 <button class="character-button card-info__character-button">Color
                     <img class="button-image card-info__button-image" src="img/arrow-down.svg" alt="arrow">
                 </button>
                 <button class="character-button card-info__character-button">Size
                     <img class="button-image card-info__button-image" src="img/arrow-down.svg" alt="arrow">
                 </button>
+
                 </div>
 
-                            <button class="card-info__button-dark">ADD TO CART</button>
-                            <p class="card-info__text">
-                                The Brioni iconic Travel jacket a staple from our Archive, has been
-                                revised as a contemporary travel piece. This single breasted jacket
-                                is based on our Virgilio fit but it features two special front patch
-                                pockets with three different entrances studied for practicality:
-                                top, side and middle to comfortably rest the hands. The side
-                                leather belt is a nod to its past function to hold ...
-                                 <a class="card-info__link" href="#">View all</a>
-                            </p>
-                        </div>
-                        <!-- /.card-info -->
-                    </div>
-                    <!-- /.card-wrapper -->
-                </div>
-                <!-- /.container -->
-            </section>
-            
-            <section class="complete">
-                <div class="container">
-                <div class="complete__line"></div>
-                <div class="complete-wrapper">
-                    <h1 class="complete__title">Complete your look</h1>
-                </div>
+                <button class="card-info__button">ADD TO CART</button>
+                <p class="card-info__text">
+                The Brioni iconic Travel jacket a staple from our Archive, has been
+                revised as a contemporary travel piece. This single breasted jacket
+                is based on our Virgilio fit but it features two special front patch
+                pockets with three different entrances studied for practicality:
+                top, side and middle to comfortably rest the hands. The side
+                leather belt is a nod to its past function to hold ...
+                    <a class="card-info__link" href="#">View all</a>
+                </p>
+            </div>
+            <!-- /.card-info -->
+        </div>
+        <!-- /.card-wrapper -->
+    </div>
+    <!-- /.container -->
+</section>
 
+<section class="complete">
+    <div class="container">
+        <div class="complete__line"></div>
+        <div class="complete-wrapper">
+            <h1 class="complete__title">Complete your look</h1>
+        </div>
+        <!-- /.complete-wrapper -->
 
                 <div class="swiper swiper2">
                     <div class="swiper-wrapper">
@@ -280,94 +243,12 @@
                     <button class="swiper-button swiper2-button2__prev swiper-button-prev"></button>
                     <button class="swiper-button swiper2-button2__next swiper-button-next"></button>
                 
-                    <div class="swiper-scrollbar2 swiper-scrollbar"></div>
+                    <div class="swiper2-scrollbar2 swiper-scrollbar"></div>
                 </div>
 
-
-                <!-- /.complete-wrapper -->
-            </div>
-                <!-- /.container -->
-            </section>
-
-    <footer class="footer">
-        <div class="container">
-            <!-- Линии на сайте -->
-            <div class="footer__line"></div>
-            <div class="footer-wrapper">
-                <div class="footer-form">
-                    <h3 class="footer-form__title">Subscribe to Brioni news</h3>
-                    <form action="#" class="footer-form__form">
-                        <input type="text" class="footer-form__input" placeholder="Enter e-mail">
-                        <img src="img/footer-form__email.svg" alt="e-mail" class="footer-form__image">
-                    </form>
-                </div>
-                <!-- /.footer-form -->
-                <div class="footer-info">
-                    <div class="footer-info__custumer">
-                        <h3 class="footer-info__title">Customer Service</h3>
-                        <ul
-                            class="footer-info__list footer-info__block-customer footer-info__block-customer--mobile_hidden">
-                            <li class="footer-info__item"><a href="#" class="footer-info__link">Delivery</a></li>
-                            <li class="footer-info__item"><a href="#" class="footer-info__link">Orders and Returns</a>
-                            </li>
-                            <li class="footer-info__item"><a href="#" class="footer-info__link">Exclusive Services</a>
-                            </li>
-                            <li class="footer-info__item"><a href="#" class="footer-info__link">Find a Boutique</a></li>
-                            <li class="footer-info__item"><a href="#" class="footer-info__link">Write to us</a></li>
-                            <li class="footer-info__item"><a href="#" class="footer-info__link">FAQ</a></li>
-                        </ul>
-                    </div>
-                    <!-- /.footer-info__custumer -->
-                    <div class="footer-info__about">
-                        <h3 class="footer-info__title">About Brioni</h3>
-                        <ul class="footer-info__list footer-info__block-about footer-info__block-about--mobile_hidden">
-                            <li class="footer-info__item"><a href="#" class="footer-info__link">Our Company</a></li>
-                            <li class="footer-info__item"><a href="#" class="footer-info__link">Atelier Brioni</a></li>
-                            <li class="footer-info__item"><a href="#" class="footer-info__link">The World of Bespoke</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.footer-info__about -->
-                    <div class="footer-info__general">
-                        <h3 class="footer-info__title">General information</h3>
-                        <ul
-                            class="footer-info__list footer-info__block-general footer-info__block-general--mobile_hidden">
-                            <li class="footer-info__item"><a href="#" class="footer-info__link">Legal Section</a></li>
-                            <li class="footer-info__item"><a href="#" class="footer-info__link">Investor Relations</a>
-                            </li>
-                            <li class="footer-info__item"><a href="#" class="footer-info__link">Privacy Policy</a></li>
-                            <li class="footer-info__item"><a href="#" class="footer-info__link">Sustainable
-                                    Development</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.footer-info__geneal -->
-                    <div class="footer-info__follows">
-                        <h3 class="footer-info__title">Follow us</h3>
-                        <div class="footer-info__follows-links">
-                            <a href="#" class="footer-info__link"><img class="footer-info__image" src="img/Facebook.svg"
-                                    alt="Icon:Facebook"></a>
-                            <a href="#" class="footer-info__link"><img class="footer-info__image" src="img/Twitter.svg"
-                                    alt="Icon:Twitter"></a>
-                            <a href="#" class="footer-info__link"><img class="footer-info__image"
-                                    src="img/Instagram.svg" alt="Icon:Instagram"></a>
-                            <a href="#" class="footer-info__link"><img class="footer-info__image" src="img/Google.svg"
-                                    alt="Icon:Google"></a>
-                            <a href="#" class="footer-info__link"><img class="footer-info__image" src="img/YouTube.svg"
-                                    alt="Icon:YouTube"></a>
-                        </div>
-                        <!-- /.footer-info__follows-links -->
-                    </div>
-                    <!-- /.footer-info__follows -->
-                </div>
-                <!-- /.footer-info -->
-                <div class="footer__line"></div>
-                <span class="footer__span">2022 © Brioni</span>
-            </div>
-            <!-- /.footer-wrapper -->
-        </div>
-        <!-- /.container -->
-    </footer>
+    </div>
+    <!-- /.container -->
+</section>
 
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>

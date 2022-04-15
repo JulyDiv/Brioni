@@ -2,14 +2,14 @@
     display: flex
     justify-content: space-between
     max-width: 1170px
-    margin-bottom: 26px
     &__color-size
         display: flex
         justify-content: space-between
+        margin-bottom: 26px
         width: 139px
     &__block
         display: flex
-        align-items: center
+        align-items: start
     &__span
         margin-right: 14px
         font-family: GTEestiProDisplay-Light
@@ -24,34 +24,50 @@
         border: none
         cursor: pointer
     &-dropdown
-        padding: 25px 0px 25px 25px
+        padding: 25px 0px 0px 25px
         width: 260px
+        height: 319px
+        background-color: #fff
+        border: 1px solid #E5E5E5
         display: none
+        &--visible
+            display: block
+        &__color
+            position: absolute
+            top: 383px
+            left: 146px
+            z-index: 0
+        &__size
+            position: absolute
+            top: 383px
+            left: 237px
+            z-index: 0
+        &__sort
+            position: absolute
+            top: 383px
+            left: 1087px
+            z-index: 0
+            width: 260px
+            height: 193px
         &__option-list
             display: flex
             flex-direction: column
             justify-content: space-between
             width: 77px
-            height: 271px
+            height: 269px
+            &_sort
+                width: 160px
+                height: 143px
         &__option-item
             display: flex
             align-items: center
         &__checkbox
-            // appearance: none
+            appearance: none
             position: relative
             margin-right: 19px
             width: 17px
             height: 17px
+            background-color: #fff
             border: 1px solid #E5E5E5
-        // &__checkbox:checked
-        //     &:after
-        //         content: ''
-        //         position: absolute
-        //         top: 50%
-        //         left: 50%
-        //         width: 13px
-        //         height: 7px
-        //         border: none
-        //         border-bottom: 3px solid lighten(#383b45, 50)
-        //         border-left: 3px solid lighten(#383b45, 50)
-        //         transform: translate(-50%, -75%) rotate(-45deg)
+            &--active
+                background-color: #000

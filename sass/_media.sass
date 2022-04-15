@@ -1,26 +1,29 @@
 @media ( max-width: 1600px)
     .swiper3
         display: none
-    .menu
-        &-mobile
-            display: none
 @media ( max-width: 1200px)
     .container
         max-width: 960px
+    .header
+        width: 1200px
     .home
-        &-wrapper
-            width: 960px
         &-info
-            padding: 0px
+            padding: 230px 0 0 87px
+            width: 600px
             &__title
-                font-size: 33px
+                font-size: 38px
+            &__block
+                height: 160px
+        &-image
+            width: 600px
     .spring
         padding: 0px 0px 100px 0px
         &-wrapper
             width: 960px
             margin: auto
         &-info
-            margin-right: 40px
+            &__text
+                margin-right: 40px
         &-image
             width: 600px
             height: 400px
@@ -32,21 +35,13 @@
         &-image
             width: 600px
             height: 400px
-        &-block
+        &-info
             display: flex
-            align-items: center
-            padding: 0 0 0 40px
             width: 300px
-            height: 400px
-            &__info
-                width: 300px
-                height: 260px
-            &__title
-                font-size: 25px
-            &__text
-                font-size: 15px
+            height: 290px
     .swiper1
-        width: 960px
+        margin-bottom: 100px
+        width: 100%
         height: 480px
         background-size: 100%
         &-button
@@ -100,6 +95,14 @@
                 &--mobile
                     &_hidden
                         display: none
+    .character
+        &-dropdown
+            &__color
+                left: 104px
+            &__size
+                left: 195px
+            &__sort
+                left: 804px
     .card
         margin-right: 20px
         margin-left: 20px
@@ -148,18 +151,27 @@
         &-info
             &__follows
                 margin-right: 5px
+    .bag
+        padding: 45px 20px
+        width: 490px
+    .contacts
+        padding: 45px 20px
+        width: 690px
+    .thank
+        padding: 45px 20px
+        width: 690px
+
 @media (max-width: 640px)
-    .header
-        padding-top: 20px
-        max-width: 640px
-        height: 60px
     .container
         width: 600px
         margin: auto
-    .navbar-menu
+    .header
+        max-width: 640px
+    .navbar
+        height: 60px
+    .navbar
         width: 600px
-        height: 19px
-        &__button
+        &-button
             display: flex
             flex-direction: column
             align-items: center
@@ -170,21 +182,21 @@
             cursor: pointer
             width: 30px
             height: 16px
-        &__block
+        &-block
             display: none
+        &-logo
+            margin-right: 0
+            margin-left: 10
+            width: 150px
+            height: 60px
     .home
-        padding: 50px 0 50px 0
-        &-wrapper
-            max-width: 640px
-            height: 500px
-            background-repeat: no-repeat
-            background-size: cover
+        padding-bottom: 0px
         &-info
-            &__title
-                padding-left: 20px
-                font-size: 20px
+            display: none
+        &-image
+            width: 640px
     .spring
-        padding: 50px 0 50px 0
+        padding: 50px 0 0px 0
         &-wrapper
             display: flex
             flex-direction: column
@@ -207,20 +219,15 @@
         &-image
             width: 640px
             height: 400px
-        &-block
-            justify-content: center
-            width: 640px
-            height: 248px
-            padding: 0
-            &__info
-                margin: 0
-                width: 485px
-                height: 249px
+        &-info
+            width: 485px
+            height: 249px
             &__title
                 font-size: 25px
             &__text
                 font-size: 15px
     .swiper
+        margin-bottom: 0
         width: 640px
         height: 320px
         background-size: 100%
@@ -254,6 +261,7 @@
                     width: 8px
                     height: 8px
     .ambassador
+        padding: 50px 0 50px 0
         &-wrapper
             max-width: 640px
         &-info
@@ -274,15 +282,21 @@
             &--mobile
                 &_hidden
                     display: none
-    .logo
-        width: 150px
-        height: 75px
-        margin: 0
     .character
         margin-bottom: 21px
         &__span
             font-size: 14px
             line-height: 16px
+        &-dropdown
+            &__color
+                top: 232px
+                left: 10px
+            &__size
+                top: 232px
+                left: 102px
+            &__sort
+                top: 232px
+                left: 350px
     .catalog
         padding-top: 23px
         &-breadcrumb
@@ -325,13 +339,17 @@
             width: 280px
             height: 450px
         &-choice
+            flex-direction: row
             flex-wrap: wrap
             width: 280px
             height: 180px
-            margin-top: 20px
             &__image
+                margin-top: 20px
+                margin-right: 100px
                 width: 80px
                 height: 80px
+                &:not(&_5)
+                    margin-right: 0px
         &-info
             width: 281px
             height: 700px
@@ -417,6 +435,7 @@
                     &_hidden
                         display: none
             &__title
+                margin-top: 0
                 margin-bottom: 19px
                 font-size: 14px
             &__follows
@@ -426,22 +445,112 @@
                 height: 18px
             &__image
                 height: 95%
-    .menu
-        &-mobile
+    .bag
+        padding: 20px 20px 40px 20px
+        width: 640px
+        right: -19px
+        &-wrapper
+            margin: auto
+        &-title
+            &__title
+                font-size: 18px
+                line-height: 21px
+        &-info
+            &__span
+                font-size: 14px
+                line-height: 16px
+        &-price
+            &__span, &__link
+                font-size: 14px
+                line-height: 16px
+        &-total
+            &__span
+                font-size: 14px
+                line-height: 16px
+    .contacts
+        padding: 20px 20px 40px 20px
+        width: 640px
+        right: -19px
+        &__line
+            width: 600px
+        &-wrapper
+            width: 600px
+        &-title
+            &__title
+                margin-bottom: 46px
+                font-size: 28px
+                line-height: 32px
+        &-sign
+            &__span, &__link
+                font-size: 14px
+                line-height: 16px
+            &__input
+                width: 290px
+                height: 45px
+            &__form
+                width: 600px
+        &-address
+            &__title
+                    margin: 0 0 18px 0
+                    font-size: 18px
+                    line-height: 21px
+            &__input
+                width: 290px
+                height: 45px
+            &__form
+                width: 600px
+        &-info
+            height: 225px
+            &__block
+                height: 91px
+            &__title
+                margin: 0 0 14px 0
+                font-size: 18px
+                line-height: 21px
+            &__text, &__link
+                font-size: 14px
+                line-height: 16px
+        &-checkbox
             display: none
-            &--visible
-                display: block
+    .thank
+        padding: 20px 20px 40px 20px
+        width: 640px
+        right: -19px
+        &-wrapper
+            width: 600px
+        &-block
+            &__span
+                font-size: 14px
+                line-height: 16px
+        &-info
+            &__title
+                margin: 0 0 33px 0
+                font-size: 20px
+                line-height: 23px
+            &__text, &__link
+                font-size: 14px
+                line-height: 16px
+        &-form
+            &__title
+                margin: 73px 0 20px 0
+                font-size: 18px
+                line-height: 21px
+            &__input
+                width: 220px
+            &__image
+                left: 180px
+    .menu
+        &__line
+            width: 350px
 @media (max-width: 320px)
     .header
-        padding-top: 15px
         max-width: 320px
-        height: 50px
     .container
         width: 300px
         margin: auto
-    .navbar-menu
+    .navbar
         width: 300px
-        height: 16px
+        height: 50px
         &__button
             display: flex
             flex-direction: column
@@ -455,18 +564,15 @@
             height: 16px
         &__block
             display: none
+        &-logo
+            margin-left: 20px
+            width: 110px
+            height: 50px
     .home
-        padding: 100px 0 150px 0
-        &-wrapper
-            max-width: 320px
-            height: 250px
-            background-repeat: no-repeat
-            background-size: cover
-        &-info
-            &__title
-                display: none
+        &-image
+            width: 320px
     .spring
-        padding: 0
+        padding: 50px 0 50px 0
         &-wrapper
             display: flex
             flex-direction: column
@@ -481,13 +587,14 @@
                 font-size: 18px
             &__text
                 font-size: 11px
+                line-height: 20px
             &__link
                 font-size: 10px
         &-image
             width: 320px
             height: 270px
     .order
-        padding: 50px 0 50px 0
+        padding: 0 0 50px 0
         &-wrapper
             display: flex
             flex-direction: column
@@ -497,24 +604,21 @@
         &-image
             width: 320px
             height: 240px
-        &-block
+        &-info
             display: flex
-            align-items: center
-            width: 320px
-            height: 300px
-            &__info
-                width: 250px
-                height: 230px
+            width: 250px
+            height: 230px
             &__title
                 font-size: 18px
             &__text
                 font-size: 11px
+                line-height: 20px
             &__link
                 font-size: 10px
     .swiper1
         display: none
     .ambassador
-        padding: 50px 0 50px 0
+        padding: 0 0 50px 0
         &-wrapper
             padding: 0
             display: flex
@@ -567,9 +671,11 @@
             &__image
                 width: 300px
     .card
+        padding-top: 23px
         &-breadcrumb
-            margin-top: 23px
             width: 294px
+            &__list
+                margin-bottom: 23px
             &__item
                 font-size: 11px
                 line-height: 14px
@@ -586,7 +692,7 @@
                 display: none
             &__button-light
                 display: flex
-            &__button-dark
+            &__button
                 width: 100%
     .swiper2
         width: 300px
@@ -615,9 +721,7 @@
                 height: 370px
                 object-fit: cover
     .footer
-        padding-top: 47px
         &__line
-            margin-bottom: 23px
         &-form
             margin-bottom: 0
             &__image
@@ -639,7 +743,6 @@
         &-info
             display: flex
             flex-direction: column
-            margin-bottom: 50px
             &__block-customer, &__block-about, &__block-general
                 &--mobile
                     &_hidden
@@ -652,3 +755,101 @@
                 height: 18px
             &__image
                 height: 95%
+    .bag
+        padding: 20px 10px 40px 10px
+        width: 320px
+        right: 0px
+        &__line
+            width: 300px
+        &-wrapper
+            width: 300px
+            margin: auto
+        &-title
+            width: 300px
+            &__title
+                font-size: 20px
+                line-height: 23px
+        &-info
+            &__image
+                margin-bottom: 20px
+                width: 89px
+                height: 150px
+        &-price
+                margin-left: 0
+                margin-bottom: 146px
+                width: 300px
+        &-total
+            height: 102px
+            &__span
+
+    .contacts
+        padding: 20px 10px 40px 10px
+        width: 320px
+        right: 0px
+        &__line
+            width: 300px
+        &-wrapper
+            width: 300px
+        &-title
+            &__title
+                margin-bottom: 41px
+                font-size: 28px
+                line-height: 32px
+        &-sign
+            &__span, &__link
+                font-size: 14px
+                line-height: 16px
+            &__input
+                width: 300px
+                height: 45px
+            &__form
+                flex-direction: column
+                height: 110px
+        &-address
+            &__title
+                    margin: 0 0 15px 0
+                    font-size: 18px
+                    line-height: 21px
+            &__input
+                width: 300px
+                height: 45px
+            &__form
+                flex-direction: column
+                height: 110px
+        &-info
+            display: none
+        &-checkbox
+            display: none
+    .thank
+        padding: 20px 10px 40px 10px
+        width: 320px
+        right: 0px
+        &-wrapper
+            width: 300px
+        &-block
+            &__span
+                font-size: 14px
+                line-height: 16px
+        &-info
+            width: 300px
+            &__title
+                margin: 0 0 33px 0
+        &-form
+            &__input
+                width: 300px
+            &__image
+                left: 255px
+    .menu
+        top: 50px
+        padding: 50px 10px
+        &__line
+            width: 300px
+        &-mobile
+            width: 320px
+        &-assortment
+            width: 320px
+            padding: 50px 10px
+            &__item
+                width: 300px
+    .overlay
+        display: none

@@ -1,12 +1,17 @@
 .card
-    margin-bottom: 94px
+    padding-top: 47px
+    padding-bottom: 94px
+    &__line
+        max-width: 1200px
+        height: 1px
+        background-color: #E5E5E5
+        margin-bottom: 50px
     &-breadcrumb
-        margin-top: 47px
-        margin-bottom: 43px
         &__list
             display: flex
             align-items: center
-            margin: 0
+            margin-top: 0
+            margin-bottom: 43px
             padding-left: 0
             list-style: none
         &__item
@@ -16,6 +21,8 @@
             font-weight: 300
             font-size: 16px
             line-height: 19px
+            &:last-child
+                color: #000
             &:not(:last-child)
                 &::after
                     content: '/'
@@ -29,15 +36,32 @@
     &-jackets
         display: flex
         justify-content: space-between
+        align-items: center
         width: 700px
         height: 630px
     &-choice
         display: flex
         flex-direction: column
         justify-content: space-between
-        margin-top: 30px
         width: 75px
         height: 570px
+        &__image
+            width: 75px
+            height: 90px
+            background-position: center
+            background-repeat: no-repeat
+            background-size: 100%
+            border: 1px solid #E5E5E5
+        &__image_1
+            background-image: url(../img/card-choice-1.png)
+        &__image_2
+            background-image: url(../img/card-choice-2.png)
+        &__image_3
+            background-image: url(../img/card-choice-3.png)
+        &__image_4
+            background-image: url(../img/card-choice-4.png)
+        &__image_5
+            background-image: url(../img/card-choice-5.png)
     &-main
         background-image: url(../img/card-main.png)
         background-size: 100%
@@ -48,7 +72,7 @@
         border: 1px solid #E5E5E5
     &-info
         width: 447px
-        height: 710px
+        height: 713px
         &__select
             display: flex
             justify-content: space-between
@@ -140,9 +164,9 @@
             font-weight: 300
             font-size: 16px
             line-height: 19px
-        // &__button-light
-        //     display: none
-        &__button-dark
+        &__button-light
+            display: none
+        &__button
             margin-bottom: 47px
             padding: 0
             width: 200px
@@ -156,8 +180,13 @@
             text-align: center
             cursor: pointer
             border: none
+            &:hover
+                color: $text-color2
+                border: 1px solid #666666
+                background-color: inherit
         &__text
             margin: 0
+            height: 149px
             color: $text-color3
             font-style: normal
             font-weight: 300

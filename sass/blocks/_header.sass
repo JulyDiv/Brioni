@@ -1,42 +1,67 @@
 .header
-    width: 100%
-    position: fixed
+    width: 1600px
     background-color: $bg-color1
-.navbar-menu
+.navbar
     display: flex
     align-items: center
     justify-content: space-between
     height: 100px
-    &__button
+    &-button
         display: none
-    &__line
-        width: 30px
-        height: 2px
-        background-color: $text-color2
-    &__block
+        &__line
+            width: 30px
+            height: 2px
+            background-color: $text-color2
+    &-block
         display: flex
         justify-content: space-between
         align-items: center
         width: 276px
-    &__item
-        list-style: none
-    &__link
-        text-decoration: none
-        color: $text-color1
-        font-style: normal
-        font-weight: 350
-        font-size: 16px
-        line-height: 19px
-        letter-spacing: 0.03em
+        &__item
+            list-style: none
+        &__link
+            text-decoration: none
+            color: $text-color1
+            font-style: normal
+            font-weight: 350
+            font-size: 16px
+            line-height: 19px
+            letter-spacing: 0.03em
+    &-logo
+        margin-right: 106px
+        width: 200px
+        height: 100px
+        background-image: url(../img/navbar-logo.svg)
+        background-size: 100%
+        background-position: center
+        background-repeat: no-repeat
 .icon
+    position: relative
     display: flex
     justify-content: space-between
     width: 170px
     height: 19px
-.logo
-    margin-right: 106px
-    width: 200px
-    height: 100px
+    &-lable
+        position: absolute
+        width: 19px
+        height: 19px
+        background-color: #fff
+        border-radius: 50%
+    &-link
+        position: relative
+    &-select
+        &--active
+            top: -12px
+            left: 62px
+            z-index: 1
+            display: none
+    &-backet
+        &--active
+            top: -12px
+            left: 162px
+            z-index: 1
+            display: none
+
 
 
 
