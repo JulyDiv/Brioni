@@ -1,18 +1,20 @@
-.overlay
-    position: fixed
-    left: 0
-    top: 60px
-    width: 100%
-    height: 100%
-    background-color: rgba(38, 38, 38, 0.75)
-    transition: opacity 0.2s
-    display: none
 .menu
     position: fixed
     top: 60px
     display: none
     width: 370px
     height: 521px
+    z-index: 2
+    &-overlay
+        position: fixed
+        left: 0
+        top: 100px
+        width: 100%
+        height: 100%
+        z-index: 2
+        background-color: rgba(38, 38, 38, 0.75)
+        transition: opacity 0.2s
+        display: none
     &__line
         width: 350px
         height: 1px
@@ -33,9 +35,16 @@
         border: none
         background-color: inherit
         cursor: pointer
+        &__image-up
+            display: none
     &-mobile
         padding: 49px 0 49px 20px
         background-color: #fff
+        animation-name: menuMobile
+        animation-duration: 0.5s
+        animation-iteration-count: 1
+        animation-fill-mode: both
+        animation-timing-function: ease-in
         &__block-top
             display: flex
             flex-direction: column
@@ -70,6 +79,7 @@
     &-assortment
         padding: 49px 0 590px 20px
         background-color: #fff
+        transition: opacity 1s
         &__button
             display: flex
             justify-content: space-between
@@ -86,7 +96,6 @@
         &__list
             background-color: #fff
             width: 330px
-            // height: 205px
         &__item
             display: flex
             justify-content: space-between
@@ -112,6 +121,14 @@
             font-size: 14px
             line-height: 16px
             letter-spacing: 0.03em
+
+@keyframes menuMobile
+    0%
+        opacity: 1
+        transform: translateX(-370px)
+    100%
+        opacity: 1
+        transform: translateX(0px)
 
 
 

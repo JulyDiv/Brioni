@@ -1,3 +1,3 @@
 # Brioni
-Кущенко Юлия
+Юлёк
 Напиши мне: july_developer@list.ru

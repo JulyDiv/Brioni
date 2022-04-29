@@ -44,14 +44,14 @@ var swiper = new Swiper('.swiper2', {
   },
 
   breakpoints: {
-    1500: {
+    1000: {
       slidesPerView: 3,
       spaceBetween: 40,
       scrollbar: {
         el: '.swiper-scrollbar',
         hide: false,
         dragSize: 400,
-  },
+      },
     },
     630: {
       slidesPerView: 2,
@@ -59,8 +59,8 @@ var swiper = new Swiper('.swiper2', {
       scrollbar: {
         el: '.swiper-scrollbar',
         hide: false,
-        dragSize: 200,
-  },
+        dragSize: 300,
+      },
     },
     320: {
       slidesPerView: 1,
@@ -68,7 +68,7 @@ var swiper = new Swiper('.swiper2', {
         el: '.swiper-scrollbar',
         hide: false,
         dragSize: 50,
-  },
+      },
     }
   },
 
@@ -107,11 +107,24 @@ $(document).ready(function () {
 //   preloader.addClass("preloader--hidden");
 //   }, 6000);
 
-// Overlay
-var overlay = $(".overlay");
-overlay.on("click", function () {
+// Menu-overlay
+var menuOverlay = $(".menu-overlay");
+menuOverlay.on("click", function () {
   menuMobile.hide();
-  overlay.hide();
+  menuOverlay.hide();
+  modalThank.hide();
+  modalContacts.hide();
+  modalBacket.hide();
+  menuClose.hide();
+  menuButton.show();
+  menuCostume.hide();
+  menuAssortment.hide();
+});
+
+// Modal-overlay
+var modalOverlay = $(".modal-overlay");
+modalOverlay.on("click", function () {
+  modalOverlay.hide();
   modalThank.hide();
   modalContacts.hide();
   modalBacket.hide();
@@ -125,7 +138,7 @@ overlay.on("click", function () {
 var menuButton = $(".navbar-button");
 var menuMobile = $(".menu-mobile");
 menuButton.on("click", function () {
-  overlay.show();
+  menuOverlay.show();
   menuMobile.show();
   menuClose.show();
   menuButton.hide();
@@ -134,7 +147,7 @@ menuButton.on("click", function () {
 // Кнопка закрытия меню
 var menuClose = $(".menu-close");
 menuClose.on("click", function () {
-  overlay.hide();
+  menuOverlay.hide();
   menuMobile.hide();
   menuAssortment.hide();
   menuButton.show();
@@ -155,7 +168,7 @@ linkAssortment.on("click", function () {
 // Кнопка возврата назад в меню
 var prevAssortment = $(".menu-assortment__button");
 prevAssortment.on("click", function () {
-  overlay.show();
+  menuOverlay.show();
   menuAssortment.hide();
   menuMobile.show();
 });
@@ -167,6 +180,9 @@ buttonAcc.on("click", function () {
   menuCostume.not($(this).next()).slideUp(1000);
   $(this).next().slideToggle(1000);
 });
+
+// Стрелка вверх в аккордионе
+
 
   // Кнопка выбор цвета в каталоге
 var buttonColor = $("[data-button='color']");
@@ -186,6 +202,18 @@ buttonSort.on("click", function () {
   $("[data-character='sort']").toggleClass("character-dropdown--visible");
 });
 
+// Кнопки сортировки в
+var buttonFilter = $("[data-toggle='filter']");
+var buttonSort320 = $("[data-toggle='sort']");
+var blockColorSize = $(".character-media");
+var blockSort = $(".character-sort");
+buttonFilter.on("click", function () {
+  blockColorSize.show();
+});
+buttonSort320.on("click", function () {
+  blockSort.show();
+});
+
 // Поиск
 var linkSearch = $("[data-toggle='search']");
 var modalSearch = $(".search");
@@ -202,13 +230,13 @@ modalSearch.hide();
 var linkBacket = $("[data-toggle='backet']");
 var modalBacket = $(".bag");
 linkBacket.on("click", function () {
-  overlay.show();
+  modalOverlay.show();
   modalBacket.show();
 });
 // Закрываем корзину
 var closeBacket = $(".close-button");
 closeBacket.click (function () {
-  overlay.hide();
+  modalOverlay.hide();
   modalBacket.hide();
 });
 
@@ -216,7 +244,7 @@ closeBacket.click (function () {
 var buttonTotal = $(".bag-total__button");
 var modalContacts = $(".contacts");
 buttonTotal.click (function () {
-  overlay.show();
+  modalOverlay.show();
   modalContacts.show();
   modalBacket.hide();
 });
@@ -224,7 +252,7 @@ buttonTotal.click (function () {
 // Закрываем окно контактной формы
 var closeContact = $(".close-button");
 closeContact.click (function () {
-  overlay.hide();
+  modalOverlay.hide();
   modalContacts.hide();
 });
 
@@ -232,7 +260,7 @@ closeContact.click (function () {
 var buttonContacts = $(".contacts-button");
 var modalThank = $(".thank");
 buttonContacts.click (function () {
-  overlay.show();
+  modalOverlay.show();
   modalThank.show();
   modalContacts.hide();
 });
@@ -240,14 +268,14 @@ buttonContacts.click (function () {
 // Закрываем окно спасибо за покупку
 var closeThank = $(".close-button");
 closeThank.click (function () {
-  overlay.hide();
+  modalOverlay.hide();
   modalThank.hide();
 });
 
 // Кнопка финиш (спасибо за покупку)
 var buttonFinish = $(".thank__button");
 buttonFinish.on("click", function () {
-  overlay.hide();
+  modalOverlay.hide();
   modalThank.hide();
   modalContacts.hide();
   modalBacket.hide();
@@ -262,29 +290,6 @@ inputFooter.on("click", function () {
   formFooter.show();
 });
 
-// Добавление в избранное
-var selectIcon = $(".catalog-assortment__icon");
-var activeIcon = $(".catalog-assortment__icon--active");
-selectIcon.on("click", function () {
-  activeIcon.show();
-  $(this).hide();
-});
-activeIcon.on("click", function () {
-  selectIcon.show();
-  $(this).hide();
-});
-
-// В корзине что-то лежит (ярлычок на иконке)
-
-// Checkbox
-// Можно сделать так, но не отменяется действие
-// var checkbox = $(".character-dropdown__checkbox");
-// var checkboxActive = $(".checkbox--active");
-// checkbox.on("click", function () {
-//   $(this).css("background-color", "#000");
-//   checkboxActive.show();
-// });
-
 // Checkbox
 var checkbox = $(".character-dropdown__checkbox");
 var checkboxActive = $(".checkbox");
@@ -293,43 +298,22 @@ checkbox.on("click", function () {
   checkboxActive.toggleClass("checkbox--active");
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Переключение фото для просмотра в card-choice-1 (карточка товара)
+$(".card-choice__image_1").on("click", function () {
+  $(".card-main").css("background-image", "url(../img/card-choice-1.png)");
+});
+$(".card-choice__image_2").on("click", function () {
+  $(".card-main").css("background-image", "url(../img/card-choice-2.png)");
+});
+$(".card-choice__image_3").on("click", function () {
+  $(".card-main").css("background-image", "url(../img/card-choice-3.png)");
+});
+$(".card-choice__image_4").on("click", function () {
+  $(".card-main").css("background-image", "url(../img/card-choice-4.png)");
+});
+$(".card-choice__image_5").on("click", function () {
+  $(".card-main").css("background-image", "url(../img/card-choice-5.png)");
+});
 
 });
 
@@ -347,30 +331,3 @@ checkbox.on("click", function () {
 
 
 
-// var $select = $('.js-select'),
-//   $dropdown = $('.js-dropdown'),
-//   $checkbox = $('input[type=checkbox]'),
-//   $icon = $('.js-icon'),
-//   isOpen = false;
-
-// var openSelection = function()  {
-//   $dropdown.addClass('is-open');
-//   isOpen = true;
-// }
-
-// var closeSelection = function() {
-//   $dropdown.removeClass('is-open');
-//   isOpen = false;
-// }
-
-// $checkbox.on('click', function(e) {
-//   console.log('click');
-// });
-
-// $select.each(function(button, wrap) {
-//   var $wrap = $(wrap);
-  
-//   $wrap.on('click', function() {
-//     isOpen ? closeSelection() : openSelection();
-//   });
-// });

@@ -1,3 +1,13 @@
+.modal-overlay
+    position: fixed
+    left: 0
+    top: 0px
+    width: 100%
+    height: 100%
+    background-color: rgba(38, 38, 38, 0.75)
+    transition: opacity 0.2s
+    display: none
+    z-index: 3
 .search
     position: absolute
     left: 1033px
@@ -5,6 +15,7 @@
     z-index: 1001
     background-color: $bg-color1
     display: none
+    animation: search 0.5s ease-in 1 both reverse
     &-wrapper
         display: flex
         justify-content: space-between
@@ -28,6 +39,14 @@
         background-color: inherit
         cursor: pointer
 
+@keyframes search
+    0%
+        opacity: 1
+        transform: translateX(0px)
+    100%
+        opacity: 0
+        transform: translateX(100%)
+
 .bag
     position: absolute
     padding: 45px 200px
@@ -37,6 +56,7 @@
     z-index: 1001
     background-color: #fff
     display: none
+    animation: bag 0.5s ease-in 1 both reverse
     &__line
         margin-bottom: 22px
         width: 450px
@@ -129,6 +149,14 @@
             letter-spacing: 0.03em
             border: none
 
+@keyframes bag
+    0%
+        opacity: 1
+        transform: translateX(0px)
+    100%
+        opacity: 1
+        transform: translateX(100%)
+
 .contacts
     position: absolute
     right: -108px
@@ -138,6 +166,7 @@
     width: 1050px
     background-color: $bg-color1
     display: none
+    animation: contacts 0.5s ease-in 1 both reverse
     &__line
         margin-bottom: 20px
         width: 650px
@@ -233,6 +262,14 @@
             text-decoration: none
             color: #BCBCBC
 
+@keyframes contacts
+    0%
+        opacity: 1
+        transform: translateX(0px)
+    100%
+        opacity: 1
+        transform: translateX(100%)
+
 .thank
     position: absolute
     top: 0
@@ -242,6 +279,7 @@
     width: 1050px
     background-color: $bg-color1
     display: none
+    animation: thank 0.5s ease-in 1 both reverse
     &-wrapper
         width: 651px
     &-block
@@ -294,30 +332,13 @@
             top: 21px
             left: 240px
 
-
-
-
-// .checkbox.style-a 
-//   display: inline-block
-//   position: relative
-//   padding-left: 25px
-//   cursor: pointer
-
-// .checkbox
-//   position: absolute
-//   opacity: 0
-//   cursor: pointer
-//   height: 0
-//   width: 0
-// .checkbox__checkmark
-//   background-color: #fff
-//   .checkbox__checkmark
-//       &:after
-//         opacity: 1
-//       &:hover
-//         background-color: #eee
-
-
+@keyframes thank
+    0%
+        opacity: 1
+        transform: translateX(0px)
+    100%
+        opacity: 1
+        transform: translateX(100%)
 
 
 
