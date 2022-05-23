@@ -173,7 +173,6 @@
         max-width: 640px
     .navbar
         height: 60px
-    .navbar
         width: 600px
         &-button
             display: flex
@@ -186,6 +185,10 @@
             cursor: pointer
             width: 30px
             height: 16px
+            &--visibile
+                display: block
+            &--hidden
+                display: none
         &-block
             display: none
         &-logo
@@ -570,6 +573,8 @@
             cursor: pointer
             width: 30px
             height: 16px
+            &--hidden
+                display: none
         &__block
             display: none
         &-logo
@@ -669,6 +674,9 @@
             width: 300px
             height: 713px
             background-color: #fff
+            display: none
+            &--visibile
+                display: block
             &__line
                 margin: 20px 0 20px 0
                 width: 240px

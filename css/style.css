@@ -2039,6 +2039,14 @@ template {
   display: none;
 }
 
+.menu-overlay--visibile {
+  display: block;
+}
+
+.menu-overlay--hidden {
+  display: none;
+}
+
 .menu__line {
   width: 350px;
   height: 1px;
@@ -2055,6 +2063,14 @@ template {
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
+  display: none;
+}
+
+.menu-close--visibile {
+  display: block;
+}
+
+.menu-close--hidden {
   display: none;
 }
 
@@ -2082,6 +2098,15 @@ template {
           animation-fill-mode: both;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
+  display: none;
+}
+
+.menu-mobile--visibile {
+  display: block;
+}
+
+.menu-mobile--hidden {
+  display: none;
 }
 
 .menu-mobile__block-top {
@@ -2144,6 +2169,10 @@ template {
   transition: opacity 1s;
 }
 
+.menu-assortment--visibile {
+  display: block;
+}
+
 .menu-assortment__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2187,6 +2216,10 @@ template {
 .menu-costume {
   padding: 17px 0 34px 0;
   display: none;
+}
+
+.menu-costume--visibile {
+  display: block;
 }
 
 .menu-costume__block {
@@ -2257,6 +2290,10 @@ template {
   z-index: 3;
 }
 
+.modal-overlay--visibile {
+  display: block;
+}
+
 .search {
   position: absolute;
   left: 1033px;
@@ -2265,6 +2302,10 @@ template {
   background-color: #262626;
   display: none;
   animation: search 0.5s ease-in 1 both reverse;
+}
+
+.search--visibile {
+  display: block;
 }
 
 .search-wrapper {
@@ -2341,6 +2382,10 @@ template {
   background-color: #fff;
   display: none;
   animation: bag 0.5s ease-in 1 both reverse;
+}
+
+.bag--visibile {
+  display: block;
 }
 
 .bag__line {
@@ -2528,6 +2573,14 @@ template {
   animation: contacts 0.5s ease-in 1 both reverse;
 }
 
+.contacts--visibile {
+  display: block;
+}
+
+.contacts--hidden {
+  display: none;
+}
+
 .contacts__line {
   margin-bottom: 20px;
   width: 650px;
@@ -2711,6 +2764,14 @@ template {
   background-color: #262626;
   display: none;
   animation: thank 0.5s ease-in 1 both reverse;
+}
+
+.thank--visibile {
+  display: block;
+}
+
+.thank--hidden {
+  display: none;
 }
 
 .thank-wrapper {
@@ -3049,8 +3110,6 @@ template {
   }
   .navbar {
     height: 60px;
-  }
-  .navbar {
     width: 600px;
   }
   .navbar-button {
@@ -3073,6 +3132,12 @@ template {
     cursor: pointer;
     width: 30px;
     height: 16px;
+  }
+  .navbar-button--visibile {
+    display: block;
+  }
+  .navbar-button--hidden {
+    display: none;
   }
   .navbar-block {
     display: none;
@@ -3600,6 +3665,9 @@ template {
     width: 30px;
     height: 16px;
   }
+  .navbar__button--hidden {
+    display: none;
+  }
   .navbar__block {
     display: none;
   }
@@ -3755,6 +3823,10 @@ template {
     width: 300px;
     height: 713px;
     background-color: #fff;
+    display: none;
+  }
+  .character-media--visibile {
+    display: block;
   }
   .character-media__line {
     margin: 20px 0 20px 0;
