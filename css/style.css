@@ -1463,10 +1463,14 @@ template {
 
 .character-media {
   display: none;
+  -webkit-animation: media 0.3s ease-in 1 both;
+          animation: media 0.3s ease-in 1 both;
 }
 
 .character-sort {
   display: none;
+  -webkit-animation: sort 0.3s ease-in 1 both;
+          animation: sort 0.3s ease-in 1 both;
 }
 
 .character__color-size {
@@ -1524,6 +1528,8 @@ template {
   top: 383px;
   left: 146px;
   z-index: 0;
+  -webkit-animation: dropdown-color 0.3s ease-in 1 both;
+          animation: dropdown-color 0.3s ease-in 1 both;
 }
 
 .character-dropdown__size {
@@ -1531,6 +1537,8 @@ template {
   top: 383px;
   left: 237px;
   z-index: 0;
+  -webkit-animation: dropdown-size 0.3s ease-in 1 both;
+          animation: dropdown-size 0.3s ease-in 1 both;
 }
 
 .character-dropdown__sort {
@@ -1540,6 +1548,8 @@ template {
   z-index: 0;
   width: 260px;
   height: 193px;
+  -webkit-animation: dropdown-sort 0.3s ease-in 1 both;
+          animation: dropdown-sort 0.3s ease-in 1 both;
 }
 
 .character-dropdown__option-list {
@@ -1585,6 +1595,136 @@ template {
 
 .character-dropdown__checkbox--active {
   background-color: #000;
+}
+
+@-webkit-keyframes dropdown-color {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes dropdown-color {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes dropdown-size {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes dropdown-size {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes dropdown-sort {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes dropdown-sort {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes media {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes media {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes sort {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes sort {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 .card {

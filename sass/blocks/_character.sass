@@ -4,8 +4,10 @@
     max-width: 1170px
     &-media
         display: none
+        animation: media 0.3s ease-in 1 both
     &-sort
         display: none
+        animation: sort 0.3s ease-in 1 both
     &__color-size
         display: flex
         justify-content: space-between
@@ -41,11 +43,13 @@
             top: 383px
             left: 146px
             z-index: 0
+            animation: dropdown-color 0.3s ease-in 1 both
         &__size
             position: absolute
             top: 383px
             left: 237px
             z-index: 0
+            animation: dropdown-size 0.3s ease-in 1 both
         &__sort
             position: absolute
             top: 383px
@@ -53,6 +57,7 @@
             z-index: 0
             width: 260px
             height: 193px
+            animation: dropdown-sort 0.3s ease-in 1 both
         &__option-list
             display: flex
             flex-direction: column
@@ -76,3 +81,42 @@
             &--active
                 background-color: #000
 
+@keyframes dropdown-color
+    0%
+        opacity: 0
+        transform: translateY(-30px)
+    100%
+        opacity: 1
+        transform: translateY(0px)
+
+@keyframes dropdown-size
+    0%
+        opacity: 0
+        transform: translateY(-30px)
+    100%
+        opacity: 1
+        transform: translateY(0px)
+
+@keyframes dropdown-sort
+    0%
+        opacity: 0
+        transform: translateY(-30px)
+    100%
+        opacity: 1
+        transform: translateY(0px)
+
+@keyframes media
+    0%
+        opacity: 1
+        transform: translateY(-10px)
+    100%
+        opacity: 1
+        transform: translateY(0px)
+
+@keyframes sort
+    0%
+        opacity: 1
+        transform: translateY(-10px)
+    100%
+        opacity: 1
+        transform: translateY(0px)

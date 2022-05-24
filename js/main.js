@@ -228,9 +228,11 @@ buttonSort.addEventListener('click', function () {
 // Кнопки сортировки в mobile
 buttonFilter.addEventListener('click', function () {
   blockColorSize.classList.toggle("character-media--visibile");
+  blockSort.classList.remove("character-media--visibile");
 });
 buttonSort320.addEventListener('click', function () {
   blockSort.classList.toggle("character-media--visibile");
+  blockColorSize.classList.remove("character-media--visibile");
 });
 
 // Поиск
@@ -302,20 +304,13 @@ inputFooter.addEventListener('mouseenter', clickInputActive);
 inputFooter.addEventListener('mouseleave', clickInput);
 
 // Checkbox
-checkbox.addEventListener('click', function () {
-  checkbox.classList.toggle("character-dropdown__checkbox--active");
-  checkboxActive.classList.toggle("checkbox--active");
-});
-
-// var checkbox = $(".character-dropdown__checkbox");
-// var checkboxActive = $(".checkbox");
-// checkbox.on("click", function () {
-//   $(this).toggleClass("character-dropdown__checkbox--active");
-//   checkboxActive.toggleClass("checkbox--active");
-// });
+// var checkboxClick = function () {
+//   checkbox.classList.toggle("character-dropdown__checkbox--active");
+//   checkboxActive.classList.toggle("checkbox--active");
+// };
+// checkbox.addEventListener('click', checkboxClick);
 
 // Переключение фото для просмотра в card-choice-1 (карточка товара)
-
 document.querySelector(".card-choice__image_1").addEventListener('click', function() {
   document.querySelector(".card-main").style.backgroundImage = "url(../img/card-choice-1.png)";
 });
