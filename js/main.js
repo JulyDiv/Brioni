@@ -104,10 +104,10 @@ var swiper = new Swiper('.swiper3', {
 'use strict';
 
 // Preloader
-var preloader = document.querySelector(".preloader");
-  setTimeout (function() {
-  preloader.classList.add("preloader--hidden");
-  }, 6000);
+// var preloader = document.querySelector(".preloader");
+//   setTimeout (function() {
+//   preloader.classList.add("preloader--hidden");
+//   }, 6000);
 
 var menuOverlay = document.querySelector(".menu-overlay"),
     modalOverlay = document.querySelector(".modal-overlay"),
@@ -129,8 +129,8 @@ var menuOverlay = document.querySelector(".menu-overlay"),
     blockSort = document.querySelector(".character-sort"),
     linkSearch = document.querySelector("[data-toggle='search']"),
     modalSearch = document.querySelector(".search"),
-    checkbox = document.querySelector(".character-dropdown__checkbox"),
-    checkboxActive = document.querySelector(".checkbox"),
+    checkbox = document.querySelectorAll(".character-dropdown__checkbox"),
+    checkboxActive = document.querySelectorAll(".checkbox"),
     formFooter = document.querySelector(".footer-form__image--grey"),
     inputFooter = document.querySelector(".footer-form__input"),
     buttonFinish = document.querySelector(".thank__button"),
@@ -284,6 +284,60 @@ buttonFinish.addEventListener('click', function () {
   modalContacts.classList.remove("contacts--visibile");
   modalBacket.classList.remove("bag--visibile");
 });
+
+// События активных элементов
+
+// Footer form
+var footerFormImage = document.querySelector('.footer-form__image');
+var footerFormImageGrey = document.querySelector('.footer-form__image--grey');
+
+var clickInputActive = function () {
+  footerFormImageGrey.classList.add('footer-form__image--grey_active');
+};
+var clickInput = function () {
+  footerFormImageGrey.classList.remove('footer-form__image--grey_active');
+};
+
+inputFooter.addEventListener('mouseenter', clickInputActive);
+inputFooter.addEventListener('mouseleave', clickInput);
+
+// Checkbox
+checkbox.addEventListener('click', function () {
+  checkbox.classList.toggle("character-dropdown__checkbox--active");
+  checkboxActive.classList.toggle("checkbox--active");
+});
+
+// var checkbox = $(".character-dropdown__checkbox");
+// var checkboxActive = $(".checkbox");
+// checkbox.on("click", function () {
+//   $(this).toggleClass("character-dropdown__checkbox--active");
+//   checkboxActive.toggleClass("checkbox--active");
+// });
+
+// Переключение фото для просмотра в card-choice-1 (карточка товара)
+
+document.querySelector(".card-choice__image_1").addEventListener('click', function() {
+  document.querySelector(".card-main").style.backgroundImage = "url(../img/card-choice-1.png)";
+});
+document.querySelector(".card-choice__image_2").addEventListener('click', function() {
+  document.querySelector(".card-main").style.backgroundImage = "url(../img/card-choice-2.png)";
+});
+
+// $(".card-choice__image_1").on("click", function () {
+//   $(".card-main").css("background-image", "url(../img/card-choice-1.png)");
+// });
+// $(".card-choice__image_2").on("click", function () {
+//   $(".card-main").css("background-image", "url(../img/card-choice-2.png)");
+// });
+// $(".card-choice__image_3").on("click", function () {
+//   $(".card-main").css("background-image", "url(../img/card-choice-3.png)");
+// });
+// $(".card-choice__image_4").on("click", function () {
+//   $(".card-main").css("background-image", "url(../img/card-choice-4.png)");
+// });
+// $(".card-choice__image_5").on("click", function () {
+//   $(".card-main").css("background-image", "url(../img/card-choice-5.png)");
+// });
 
 // jQuery
 // $(document).ready(function () {

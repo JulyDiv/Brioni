@@ -1172,8 +1172,16 @@ template {
   display: none;
 }
 
+.footer-form__image--grey_active {
+  display: block;
+}
+
 .footer-form__image--red {
   display: none;
+}
+
+.footer-form__image--red_active {
+  display: block;
 }
 
 .footer-info {
