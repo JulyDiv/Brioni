@@ -128,6 +128,13 @@ var menuOverlay = document.querySelector(".menu-overlay"),
     blockColorSize = document.querySelector(".character-media"),
     blockSort = document.querySelector(".character-sort"),
     linkSearch = document.querySelector("[data-toggle='search']"),
+    linkSearchActive = document.querySelector(".icon__search-hover"),
+    linkSelect = document.querySelector(".icon__select"),
+    linkSelectActive = document.querySelector(".icon__select-hover"),
+    linkUser = document.querySelector(".icon__user"),
+    linkUserActive = document.querySelector(".icon__user-hover"),
+    linkBacket = document.querySelector(".icon__backet"),
+    linkBacketActive = document.querySelector(".icon__backet-hover"),
     modalSearch = document.querySelector(".search"),
     checkbox = document.querySelectorAll(".character-dropdown__checkbox"),
     checkboxActive = document.querySelectorAll(".checkbox"),
@@ -145,6 +152,8 @@ var menuOverlay = document.querySelector(".menu-overlay"),
     characterDropdownColor = document.querySelector(".character-dropdown__color"),
     characterDropdownSize = document.querySelector(".character-dropdown__size"),
     characterDropdownSort = document.querySelector(".character-dropdown__sort"),
+    checkboxContacts = document.querySelector(".contacts-checkbox__input"),
+    checkboxActiveContacts = document.querySelector(".contacts-checkbox__input--active"),
     linkBacket = document.querySelector("[data-toggle='backet']");
 
 // Menu-overlay
@@ -236,7 +245,7 @@ buttonSort320.addEventListener('click', function () {
 });
 
 // Поиск
-linkSearch.addEventListener('click', function () {
+linkSearchActive.addEventListener('click', function () {
   modalSearch.classList.toggle("search--visibile");
 });
 // Закрыть поиск
@@ -245,7 +254,7 @@ closeSearch.addEventListener('click', function () {
 });
 
 // Корзина
-linkBacket.addEventListener('click', function () {
+linkBacketActive.addEventListener('click', function () {
   modalOverlay.classList.toggle("modal-overlay--visibile");
   modalBacket.classList.toggle("bag--visibile");
 });
@@ -303,20 +312,108 @@ var clickInput = function () {
 inputFooter.addEventListener('mouseenter', clickInputActive);
 inputFooter.addEventListener('mouseleave', clickInput);
 
-// Checkbox
+// Checkbox character-dropdown (выбор цвета, размера, сортировка)
 // var checkboxClick = function () {
 //   checkbox.classList.toggle("character-dropdown__checkbox--active");
 //   checkboxActive.classList.toggle("checkbox--active");
 // };
 // checkbox.addEventListener('click', checkboxClick);
 
+// Checkbox contacts
+checkboxContacts.addEventListener('click', function () {
+  checkboxContacts.classList.toggle("contacts-checkbox__input--active");
+});
+
 // Переключение фото для просмотра в card-choice-1 (карточка товара)
-document.querySelector(".card-choice__image_1").addEventListener('click', function() {
-  document.querySelector(".card-main").style.backgroundImage = "url(../img/card-choice-1.png)";
-});
-document.querySelector(".card-choice__image_2").addEventListener('click', function() {
-  document.querySelector(".card-main").style.backgroundImage = "url(../img/card-choice-2.png)";
-});
+// document.querySelector(".card-choice__image_1").addEventListener('click', function() {
+//   document.querySelector(".card-main").style.backgroundImage = "url(../img/card-choice-1.png)";
+// });
+// document.querySelector(".card-choice__image_2").addEventListener('click', function() {
+//   document.querySelector(".card-main").style.backgroundImage = "url(../img/card-choice-2.png)";
+// });
+
+// MenuButton hover
+var menuLine = document.querySelectorAll('.navbar-button__line');
+var clickLineActive = function () {
+  menuLine[0].classList.add('navbar-button__line--active');
+  menuLine[1].classList.add('navbar-button__line--active');
+  menuLine[2].classList.add('navbar-button__line--active');
+};
+var clickLine = function () {
+  menuLine[0].classList.remove('navbar-button__line--active');
+  menuLine[1].classList.remove('navbar-button__line--active');
+  menuLine[2].classList.remove('navbar-button__line--active');
+};
+menuButton.addEventListener('mouseenter', clickLineActive);
+menuButton.addEventListener('mouseleave', clickLine);
+
+// Search hover
+var clickSearchActive = function () {
+  linkSearch.classList.add('icon__search--hidden');
+  linkSearch.classList.remove('icon__search');
+  linkSearchActive.classList.remove('icon__search-hover');
+  linkSearchActive.classList.add('icon__search-hover--active');
+};
+var clickSearch = function () {
+  linkSearch.classList.remove('icon__search--hidden');
+  linkSearch.classList.remove('icon__search--active');
+  linkSearch.classList.add('icon__search');
+  linkSearchActive.classList.remove('icon__search-hover--active');
+  linkSearchActive.classList.add('icon__search-hover');
+};
+linkSearch.addEventListener('mouseenter', clickSearchActive);
+linkSearch.addEventListener('mouseleave', clickSearch);
+
+// Select hover
+var clickSelectActive = function () {
+  linkSelect.classList.add('icon__select--hidden');
+  linkSelect.classList.remove('icon__select');
+  linkSelectActive.classList.remove('icon__select-hover');
+  linkSelectActive.classList.add('icon__select-hover--active');
+};
+var clickSelect = function () {
+  linkSelect.classList.remove('icon__select--hidden');
+  linkSelect.classList.remove('icon__select--active');
+  linkSelect.classList.add('icon__select');
+  linkSelectActive.classList.remove('icon__select-hover--active');
+  linkSelectActive.classList.add('icon__select-hover');
+};
+linkSelect.addEventListener('mouseenter', clickSelectActive);
+linkSelect.addEventListener('mouseleave', clickSelect);
+
+// User hover
+var clickUserActive = function () {
+  linkUser.classList.add('icon__user--hidden');
+  linkUser.classList.remove('icon__user');
+  linkUserActive.classList.remove('icon__user-hover');
+  linkUserActive.classList.add('icon__user-hover--active');
+};
+var clickUser = function () {
+  linkUser.classList.remove('icon__user--hidden');
+  linkUser.classList.remove('icon__user--active');
+  linkUser.classList.add('icon__user');
+  linkUserActive.classList.remove('icon__user-hover--active');
+  linkUserActive.classList.add('icon__user-hover');
+};
+linkUser.addEventListener('mouseenter', clickUserActive);
+linkUser.addEventListener('mouseleave', clickUser);
+
+// Backet hover
+var clickBacketActive = function () {
+  linkBacket.classList.add('icon__backet--hidden');
+  linkBacket.classList.remove('icon__backet');
+  linkBacketActive.classList.remove('icon__backet-hover');
+  linkBacketActive.classList.add('icon__backet-hover--active');
+};
+var clickBacket = function () {
+  linkBacket.classList.remove('icon__backet--hidden');
+  linkBacket.classList.remove('icon__backet--active');
+  linkBacket.classList.add('icon__backet');
+  linkBacketActive.classList.remove('icon__backet-hover--active');
+  linkBacketActive.classList.add('icon__backet-hover');
+};
+linkBacket.addEventListener('mouseenter', clickBacketActive);
+linkBacket.addEventListener('mouseleave', clickBacket);
 
 // $(".card-choice__image_1").on("click", function () {
 //   $(".card-main").css("background-image", "url(../img/card-choice-1.png)");

@@ -16,6 +16,8 @@
             width: 30px
             height: 2px
             background-color: $text-color2
+            &--active
+                background-color: #ffff
     &-block
         display: flex
         justify-content: space-between
@@ -31,6 +33,17 @@
             font-size: 16px
             line-height: 19px
             letter-spacing: 0.03em
+            &:hover
+                color: #fff
+            &:after
+                content: ''
+                display: block
+                height: 1px
+                width: 0%
+                background-color: #fff
+                transition: width 0.3s ease-in-out
+            &:hover:after
+                width: 100%
     &-logo
         margin-right: 106px
         width: 200px
@@ -45,6 +58,50 @@
     justify-content: space-between
     width: 170px
     height: 19px
+    &__search
+        &--active
+            display: block
+        &--hidden
+            display: none
+    &__search-hover
+        display: none
+        &--active
+            display: block
+        &--hidden
+            display: none
+    &__select
+        &--active
+            display: block
+        &--hidden
+            display: none
+    &__select-hover
+        display: none
+        &--active
+            display: block
+        &--hidden
+            display: none
+    &__user
+        &--active
+            display: block
+        &--hidden
+            display: none
+    &__user-hover
+        display: none
+        &--active
+            display: block
+        &--hidden
+            display: none
+    &__backet
+        &--active
+            display: block
+        &--hidden
+            display: none
+    &__backet-hover
+        display: none
+        &--active
+            display: block
+        &--hidden
+            display: none
     &-lable
         position: absolute
         width: 19px

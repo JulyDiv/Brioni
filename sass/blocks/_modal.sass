@@ -266,6 +266,16 @@
             height: 17px
             &--active
                 background-color: inherit
+                &:after
+                    content: ''
+                    position: absolute
+                    top: 7px
+                    left: 8px
+                    width: 7px
+                    height: 4px
+                    border-bottom: 3px solid lighten(#fff, 0)
+                    border-left: 3px solid lighten(#fff, 0)
+                    transform: translate(-50%, -65%) rotate(-45deg)
         &__span
             color: $text-color2
         &__link

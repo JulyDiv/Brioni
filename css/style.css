@@ -713,6 +713,10 @@ template {
   background-color: #666666;
 }
 
+.navbar-button__line--active {
+  background-color: #ffff;
+}
+
 .navbar-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -740,6 +744,24 @@ template {
   letter-spacing: 0.03em;
 }
 
+.navbar-block__link:hover {
+  color: #fff;
+}
+
+.navbar-block__link:after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0%;
+  background-color: #fff;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-block__link:hover:after {
+  width: 100%;
+}
+
 .navbar-logo {
   margin-right: 106px;
   width: 200px;
@@ -760,6 +782,86 @@ template {
           justify-content: space-between;
   width: 170px;
   height: 19px;
+}
+
+.icon__search--active {
+  display: block;
+}
+
+.icon__search--hidden {
+  display: none;
+}
+
+.icon__search-hover {
+  display: none;
+}
+
+.icon__search-hover--active {
+  display: block;
+}
+
+.icon__search-hover--hidden {
+  display: none;
+}
+
+.icon__select--active {
+  display: block;
+}
+
+.icon__select--hidden {
+  display: none;
+}
+
+.icon__select-hover {
+  display: none;
+}
+
+.icon__select-hover--active {
+  display: block;
+}
+
+.icon__select-hover--hidden {
+  display: none;
+}
+
+.icon__user--active {
+  display: block;
+}
+
+.icon__user--hidden {
+  display: none;
+}
+
+.icon__user-hover {
+  display: none;
+}
+
+.icon__user-hover--active {
+  display: block;
+}
+
+.icon__user-hover--hidden {
+  display: none;
+}
+
+.icon__backet--active {
+  display: block;
+}
+
+.icon__backet--hidden {
+  display: none;
+}
+
+.icon__backet-hover {
+  display: none;
+}
+
+.icon__backet-hover--active {
+  display: block;
+}
+
+.icon__backet-hover--hidden {
+  display: none;
 }
 
 .icon-lable {
@@ -2865,6 +2967,19 @@ template {
 
 .contacts-checkbox__input--active {
   background-color: inherit;
+}
+
+.contacts-checkbox__input--active:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  width: 7px;
+  height: 4px;
+  border-bottom: 3px solid white;
+  border-left: 3px solid white;
+  -webkit-transform: translate(-50%, -65%) rotate(-45deg);
+          transform: translate(-50%, -65%) rotate(-45deg);
 }
 
 .contacts-checkbox__span {
