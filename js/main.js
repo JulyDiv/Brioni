@@ -1,18 +1,20 @@
-var swiper = new Swiper('.swiper1', {
+"use strict";
+
+var swiper = new Swiper(".swiper1", {
   // Optional parameters
-  direction: 'horizontal',
+  direction: "horizontal",
   loop: true,
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 
   // Keyboard
@@ -22,18 +24,18 @@ var swiper = new Swiper('.swiper1', {
   },
 });
 
-var swiper = new Swiper('.swiper2', {
+var swiper = new Swiper(".swiper2", {
   slidesPerView: 3,
   spaceBetween: 45,
   freeMode: true,
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 
   scrollbar: {
-    el: '.swiper-scrollbar',
+    el: ".swiper-scrollbar",
     hide: false,
     dragSize: 365,
   },
@@ -44,20 +46,20 @@ var swiper = new Swiper('.swiper2', {
   },
 
   breakpoints: {
-    1000: {
+    1200: {
       slidesPerView: 3,
       spaceBetween: 40,
       scrollbar: {
-        el: '.swiper-scrollbar',
+        el: ".swiper-scrollbar",
         hide: false,
         dragSize: 400,
       },
     },
-    630: {
+    480: {
       slidesPerView: 2,
       spaceBetween: 40,
       scrollbar: {
-        el: '.swiper-scrollbar',
+        el: ".swiper-scrollbar",
         hide: false,
         dragSize: 300,
       },
@@ -65,30 +67,29 @@ var swiper = new Swiper('.swiper2', {
     320: {
       slidesPerView: 1,
       scrollbar: {
-        el: '.swiper-scrollbar',
+        el: ".swiper-scrollbar",
         hide: false,
         dragSize: 50,
       },
-    }
+    },
   },
-
 });
 
-var swiper = new Swiper('.swiper3', {
+var swiper = new Swiper(".swiper3", {
   // Optional parameters
-  direction: 'horizontal',
+  direction: "horizontal",
   spaceBetween: 10,
   loop: true,
 
   scrollbar: {
-    el: '.swiper-scrollbar',
+    el: ".swiper-scrollbar",
     hide: false,
     dragSize: 50,
   },
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
   },
 
@@ -101,114 +102,107 @@ var swiper = new Swiper('.swiper3', {
 
 // JS
 
-'use strict';
-
 // Preloader
 // var preloader = document.querySelector(".preloader");
 //   setTimeout (function() {
 //   preloader.classList.add("preloader--hidden");
 //   }, 6000);
 
-var menuOverlay = document.querySelector(".menu-overlay"),
-    modalOverlay = document.querySelector(".modal-overlay"),
-    menuButton = document.querySelector(".navbar-button"),
-    menuClose = document.querySelector(".menu-close"),
-    menuMobile = document.querySelector(".menu-mobile"),
-    linkAssortment = document.querySelector(".menu-mobile__link-top"),
-    menuAssortment = document.querySelector(".menu-assortment"),
-    prevAssortment = document.querySelector(".menu-assortment__button"),
-    buttonAcc = document.querySelector(".menu-assortment__item"),
-    menuCostume = document.querySelector(".menu-costume"),
-    buttonColor = document.querySelector("[data-button='color']"),
-    buttonSize = document.querySelector("[data-button='size']"),
-    buttonSort = document.querySelector("[data-button='sort']"),
-    closeSearch = document.querySelector(".search-button"),
-    buttonFilter = document.querySelector("[data-toggle='filter']"),
-    buttonSort320 = document.querySelector("[data-toggle='sort']"),
-    blockColorSize = document.querySelector(".character-media"),
-    blockSort = document.querySelector(".character-sort"),
-    linkSearch = document.querySelector("[data-toggle='search']"),
-    linkSearchActive = document.querySelector(".icon__search-hover"),
-    linkSelect = document.querySelector(".icon__select"),
-    linkSelectActive = document.querySelector(".icon__select-hover"),
-    linkUser = document.querySelector(".icon__user"),
-    linkUserActive = document.querySelector(".icon__user-hover"),
-    linkBacket = document.querySelector(".icon__backet"),
-    linkBacketActive = document.querySelector(".icon__backet-hover"),
-    modalSearch = document.querySelector(".search"),
-    checkbox = document.querySelectorAll(".character-dropdown__checkbox"),
-    checkboxActive = document.querySelectorAll(".checkbox"),
-    formFooter = document.querySelector(".footer-form__image--grey"),
-    inputFooter = document.querySelector(".footer-form__input"),
-    buttonFinish = document.querySelector(".thank__button"),
-    closeThank = document.querySelector(".thank-block__button"),
-    buttonContacts = document.querySelector(".contacts-button"),
-    modalThank = document.querySelector(".thank"),
-    closeContact = document.querySelector(".contacts-title__button"),
-    buttonTotal = document.querySelector(".bag-total__button"),
-    modalContacts = document.querySelector(".contacts"),
-    closeBacket = document.querySelector(".bag-title__button"),
-    modalBacket = document.querySelector(".bag"),
-    characterDropdownColor = document.querySelector(".character-dropdown__color"),
-    characterDropdownSize = document.querySelector(".character-dropdown__size"),
-    characterDropdownSort = document.querySelector(".character-dropdown__sort"),
-    checkboxContacts = document.querySelector(".contacts-checkbox__input"),
-    checkboxActiveContacts = document.querySelector(".contacts-checkbox__input--active"),
-    linkBacket = document.querySelector("[data-toggle='backet']");
+const menuOverlay = document.querySelector(".menu-overlay"),
+  modalOverlay = document.querySelector(".modal-overlay"),
+  menuButton = document.querySelector(".navbar-button"),
+  menuClose = document.querySelector(".menu-close"),
+  menuMobile = document.querySelector(".menu-mobile"),
+  linkAssortment = document.querySelector(".menu-mobile__link-top"),
+  menuAssortment = document.querySelector(".menu-assortment"),
+  prevAssortment = document.querySelector(".menu-assortment__button"),
+  buttonAcc = document.querySelector(".menu-assortment__item"),
+  menuCostume = document.querySelector(".menu-costume"),
+  buttonColor = document.querySelector("[data-button='color']"),
+  buttonSize = document.querySelector("[data-button='size']"),
+  buttonSort = document.querySelector("[data-button='sort']"),
+  closeSearch = document.querySelector(".search-button"),
+  buttonFilter = document.querySelector("[data-toggle='filter']"),
+  buttonSort320 = document.querySelector("[data-toggle='sort']"),
+  blockColorSize = document.querySelector(".character-media"),
+  blockSort = document.querySelector(".character-sort"),
+  linkSearch = document.querySelector("[data-toggle='search']"),
+  linkSelect = document.querySelector(".icon__select"),
+  linkUser = document.querySelector(".icon__user"),
+  linkBacket = document.querySelector(".icon__backet"),
+  modalSearch = document.querySelector(".search"),
+  checkbox = document.querySelectorAll(".character-dropdown__checkbox"),
+  checkboxActive = document.querySelectorAll(".checkbox"),
+  formFooter = document.querySelector(".footer-form__image--grey"),
+  inputFooter = document.querySelector(".footer-form__input"),
+  buttonFinish = document.querySelector(".thank__button"),
+  closeThank = document.querySelector(".thank-block__button"),
+  buttonContacts = document.querySelector(".contacts-button"),
+  modalThank = document.querySelector(".thank"),
+  closeContact = document.querySelector(".contacts-title__button"),
+  buttonTotal = document.querySelector(".bag-total__button"),
+  modalContacts = document.querySelector(".contacts"),
+  closeBacket = document.querySelector(".bag-title__button"),
+  modalBacket = document.querySelector(".bag"),
+  characterDropdownColor = document.querySelector(".character-dropdown__color"),
+  characterDropdownSize = document.querySelector(".character-dropdown__size"),
+  characterDropdownSort = document.querySelector(".character-dropdown__sort"),
+  checkboxContacts = document.querySelector(".contacts-checkbox__input"),
+  checkboxActiveContacts = document.querySelector(".contacts-checkbox__input--active");
 
 // Menu-overlay
-menuOverlay.addEventListener('click', function () {
-  menuMobile.classList.remove('menu-mobile--visibile');
-  menuOverlay.classList.toggle('menu-overlay--visibile');
-  modalThank.classList.toggle('thank--hidden');
-  modalContacts.classList.toggle('contacts--hidden');
-  modalBacket.classList.toggle('bag--hidden');
-  menuClose.classList.toggle('menu-close--visibile');
-  menuButton.classList.remove('navbar-button--hidden');
-  menuCostume.classList.toggle('menu-costume--hidden');
-  menuAssortment.classList.remove('menu-assortment--visibile');
+menuOverlay.addEventListener("click", function () {
+  menuMobile.classList.remove("menu-mobile--visibile");
+  menuOverlay.classList.toggle("menu-overlay--visibile");
+  modalThank.classList.toggle("thank--hidden");
+  modalContacts.classList.toggle("contacts--hidden");
+  modalBacket.classList.toggle("bag--hidden");
+  menuClose.classList.toggle("menu-close--visibile");
+  menuButton.classList.remove("navbar-button--hidden");
+  menuCostume.classList.toggle("menu-costume--hidden");
+  menuAssortment.classList.remove("menu-assortment--visibile");
 });
 
 // Modal-overlay
-modalOverlay.addEventListener('click', function () {
-  modalOverlay.classList.remove('modal-overlay--visibile');
-  modalThank.classList.toggle('thank--hidden');
-  modalContacts.classList.remove('contacts--visibile');
-  modalBacket.classList.remove('bag--visibile');
-  menuClose.classList.toggle('menu-close--hidden');
-  menuButton.classList.toggle('navbar-button--visibile');
-  menuCostume.classList.toggle('menu-costume--hidden');
-  menuAssortment.classList.toggle('menu-assortment--hidden');
+modalOverlay.addEventListener("click", function () {
+  modalOverlay.classList.remove("modal-overlay--visibile");
+  modalThank.classList.toggle("thank--hidden");
+  modalContacts.classList.remove("contacts--visibile");
+  modalBacket.classList.remove("bag--visibile");
+  menuClose.classList.toggle("menu-close--hidden");
+  menuButton.classList.toggle("navbar-button--visibile");
+  menuCostume.classList.toggle("menu-costume--hidden");
+  menuAssortment.classList.toggle("menu-assortment--hidden");
 });
 
 // Кнопка меню
-menuButton.addEventListener('click', function () {
-  menuMobile.classList.toggle('menu-mobile--visibile');
-  menuOverlay.classList.toggle('menu-overlay--visibile');
-  menuClose.classList.toggle('menu-close--visibile');
-  menuButton.classList.toggle('navbar-button--hidden');
+menuButton.addEventListener("click", function () {
+  menuMobile.classList.toggle("menu-mobile--visibile");
+  menuOverlay.classList.toggle("menu-overlay--visibile");
+  menuClose.classList.toggle("menu-close--visibile");
+  menuButton.classList.toggle("navbar-button--hidden");
 });
 
 // Кнопка закрытия меню
-menuClose.addEventListener('click', function () {
-  menuOverlay.classList.toggle('menu-overlay--visibile');
-  menuMobile.classList.remove('menu-mobile--visibile');
-  menuAssortment.classList.remove('menu-assortment--visibile');
-  menuButton.classList.toggle('navbar-button--hidden');
-  menuClose.classList.remove('menu-close--visibile');
+menuClose.addEventListener("click", function () {
+  menuOverlay.classList.toggle("menu-overlay--visibile");
+  menuMobile.classList.remove("menu-mobile--visibile");
+  menuAssortment.classList.remove("menu-assortment--visibile");
+  menuButton.classList.toggle("navbar-button--hidden");
+  menuClose.classList.remove("menu-close--visibile");
   // menuCostume.hide();
 });
 
 // Меню ассортимент
-linkAssortment.addEventListener('click', function () {
-  menuAssortment.classList.toggle('menu-assortment--visibile');
-  menuMobile.classList.toggle('menu-mobile--visibile');
+linkAssortment.addEventListener("click", function () {
+  menuAssortment.classList.toggle("menu-assortment--visibile");
+  menuMobile.classList.toggle("menu-mobile--visibile");
 });
 
 // Кнопка возврата назад в меню
-prevAssortment.addEventListener('click', function () {
-  menuAssortment.classList.remove('menu-assortment--visibile');
-  menuMobile.classList.toggle('menu-mobile--visibile');
+prevAssortment.addEventListener("click", function () {
+  menuAssortment.classList.remove("menu-assortment--visibile");
+  menuMobile.classList.toggle("menu-mobile--visibile");
 });
 
 // Аккордион - this еще не проходила в js
@@ -220,76 +214,86 @@ prevAssortment.addEventListener('click', function () {
 // Стрелка вверх в аккордионе
 
 // Кнопка выбор цвета в каталоге
-buttonColor.addEventListener('click', function () {
-  characterDropdownColor.classList.toggle("character-dropdown--visible");
-});
+if (buttonColor) {
+  buttonColor.addEventListener("click", function () {
+    characterDropdownColor.classList.toggle("character-dropdown--visible");
+  });
+}
 
 // Кнопка выбор размера в каталоге
-buttonSize.addEventListener('click', function () {
-  characterDropdownSize.classList.toggle("character-dropdown--visible");
-});
+if (buttonSize) {
+  buttonSize.addEventListener("click", function () {
+    characterDropdownSize.classList.toggle("character-dropdown--visible");
+  });
+}
 
 // Кнопка сортировки
-buttonSort.addEventListener('click', function () {
-  characterDropdownSort.classList.toggle("character-dropdown--visible");
-});
+if (buttonSize) {
+  buttonSort.addEventListener("click", function () {
+    characterDropdownSort.classList.toggle("character-dropdown--visible");
+  });
+}
 
 // Кнопки сортировки в mobile
-buttonFilter.addEventListener('click', function () {
-  blockColorSize.classList.toggle("character-media--visibile");
-  blockSort.classList.remove("character-media--visibile");
-});
-buttonSort320.addEventListener('click', function () {
-  blockSort.classList.toggle("character-media--visibile");
-  blockColorSize.classList.remove("character-media--visibile");
-});
+if (buttonFilter) {
+  buttonFilter.addEventListener("click", function () {
+    blockColorSize.classList.toggle("character-media--visibile");
+    blockSort.classList.remove("character-media--visibile");
+  });
+}
+if (buttonSort320) {
+  buttonSort320.addEventListener("click", function () {
+    blockSort.classList.toggle("character-media--visibile");
+    blockColorSize.classList.remove("character-media--visibile");
+  });
+}
 
 // Поиск
-linkSearchActive.addEventListener('click', function () {
+linkSearch.addEventListener("click", function () {
   modalSearch.classList.toggle("search--visibile");
 });
 // Закрыть поиск
-closeSearch.addEventListener('click', function () {
+closeSearch.addEventListener("click", function () {
   modalSearch.classList.toggle("search--visibile");
 });
 
 // Корзина
-linkBacketActive.addEventListener('click', function () {
+linkBacket.addEventListener("click", function () {
   modalOverlay.classList.toggle("modal-overlay--visibile");
   modalBacket.classList.toggle("bag--visibile");
 });
 // Закрываем корзину
-closeBacket.addEventListener('click', function () {
+closeBacket.addEventListener("click", function () {
   modalOverlay.classList.remove("modal-overlay--visibile");
   modalBacket.classList.remove("bag--visibile");
 });
 
 // Кнопка в корзине (окно контактной формы)
-buttonTotal.addEventListener('click', function () {
+buttonTotal.addEventListener("click", function () {
   modalContacts.classList.toggle("contacts--visibile");
   modalBacket.classList.remove("bag--visibile");
 });
 
 // Закрываем окно контактной формы
-closeContact.addEventListener('click', function () {
+closeContact.addEventListener("click", function () {
   modalOverlay.classList.remove("modal-overlay--visibile");
   modalContacts.classList.remove("contacts--visibile");
 });
 
 // Кнопка в корзине (заполнение контактной формы)
-buttonContacts.addEventListener('click', function () {
+buttonContacts.addEventListener("click", function () {
   modalThank.classList.toggle("thank--visibile");
   modalContacts.classList.remove("contacts--visibile");
 });
 
 // Закрываем окно спасибо за покупку
-closeThank.addEventListener('click', function () {
+closeThank.addEventListener("click", function () {
   modalThank.classList.remove("thank--visibile");
   modalOverlay.classList.remove("modal-overlay--visibile");
 });
 
 // Кнопка финиш (спасибо за покупку)
-buttonFinish.addEventListener('click', function () {
+buttonFinish.addEventListener("click", function () {
   modalOverlay.classList.remove("modal-overlay--visibile");
   modalThank.classList.remove("thank--visibile");
   modalContacts.classList.remove("contacts--visibile");
@@ -299,18 +303,18 @@ buttonFinish.addEventListener('click', function () {
 // События активных элементов
 
 // Footer form
-var footerFormImage = document.querySelector('.footer-form__image');
-var footerFormImageGrey = document.querySelector('.footer-form__image--grey');
+var footerFormImage = document.querySelector(".footer-form__image");
+var footerFormImageGrey = document.querySelector(".footer-form__image--grey");
 
 var clickInputActive = function () {
-  footerFormImageGrey.classList.add('footer-form__image--grey_active');
+  footerFormImageGrey.classList.add("footer-form__image--grey_active");
 };
 var clickInput = function () {
-  footerFormImageGrey.classList.remove('footer-form__image--grey_active');
+  footerFormImageGrey.classList.remove("footer-form__image--grey_active");
 };
 
-inputFooter.addEventListener('mouseenter', clickInputActive);
-inputFooter.addEventListener('mouseleave', clickInput);
+inputFooter.addEventListener("mouseenter", clickInputActive);
+inputFooter.addEventListener("mouseleave", clickInput);
 
 // Checkbox character-dropdown (выбор цвета, размера, сортировка)
 // var checkboxClick = function () {
@@ -320,7 +324,7 @@ inputFooter.addEventListener('mouseleave', clickInput);
 // checkbox.addEventListener('click', checkboxClick);
 
 // Checkbox contacts
-checkboxContacts.addEventListener('click', function () {
+checkboxContacts.addEventListener("click", function () {
   checkboxContacts.classList.toggle("contacts-checkbox__input--active");
 });
 
@@ -333,87 +337,19 @@ checkboxContacts.addEventListener('click', function () {
 // });
 
 // MenuButton hover
-var menuLine = document.querySelectorAll('.navbar-button__line');
+var menuLine = document.querySelectorAll(".navbar-button__line");
 var clickLineActive = function () {
-  menuLine[0].classList.add('navbar-button__line--active');
-  menuLine[1].classList.add('navbar-button__line--active');
-  menuLine[2].classList.add('navbar-button__line--active');
+  menuLine[0].classList.add("navbar-button__line--active");
+  menuLine[1].classList.add("navbar-button__line--active");
+  menuLine[2].classList.add("navbar-button__line--active");
 };
 var clickLine = function () {
-  menuLine[0].classList.remove('navbar-button__line--active');
-  menuLine[1].classList.remove('navbar-button__line--active');
-  menuLine[2].classList.remove('navbar-button__line--active');
+  menuLine[0].classList.remove("navbar-button__line--active");
+  menuLine[1].classList.remove("navbar-button__line--active");
+  menuLine[2].classList.remove("navbar-button__line--active");
 };
-menuButton.addEventListener('mouseenter', clickLineActive);
-menuButton.addEventListener('mouseleave', clickLine);
-
-// Search hover
-var clickSearchActive = function () {
-  linkSearch.classList.add('icon__search--hidden');
-  linkSearch.classList.remove('icon__search');
-  linkSearchActive.classList.remove('icon__search-hover');
-  linkSearchActive.classList.add('icon__search-hover--active');
-};
-var clickSearch = function () {
-  linkSearch.classList.remove('icon__search--hidden');
-  linkSearch.classList.remove('icon__search--active');
-  linkSearch.classList.add('icon__search');
-  linkSearchActive.classList.remove('icon__search-hover--active');
-  linkSearchActive.classList.add('icon__search-hover');
-};
-linkSearch.addEventListener('mouseenter', clickSearchActive);
-linkSearch.addEventListener('mouseleave', clickSearch);
-
-// Select hover
-var clickSelectActive = function () {
-  linkSelect.classList.add('icon__select--hidden');
-  linkSelect.classList.remove('icon__select');
-  linkSelectActive.classList.remove('icon__select-hover');
-  linkSelectActive.classList.add('icon__select-hover--active');
-};
-var clickSelect = function () {
-  linkSelect.classList.remove('icon__select--hidden');
-  linkSelect.classList.remove('icon__select--active');
-  linkSelect.classList.add('icon__select');
-  linkSelectActive.classList.remove('icon__select-hover--active');
-  linkSelectActive.classList.add('icon__select-hover');
-};
-linkSelect.addEventListener('mouseenter', clickSelectActive);
-linkSelect.addEventListener('mouseleave', clickSelect);
-
-// User hover
-var clickUserActive = function () {
-  linkUser.classList.add('icon__user--hidden');
-  linkUser.classList.remove('icon__user');
-  linkUserActive.classList.remove('icon__user-hover');
-  linkUserActive.classList.add('icon__user-hover--active');
-};
-var clickUser = function () {
-  linkUser.classList.remove('icon__user--hidden');
-  linkUser.classList.remove('icon__user--active');
-  linkUser.classList.add('icon__user');
-  linkUserActive.classList.remove('icon__user-hover--active');
-  linkUserActive.classList.add('icon__user-hover');
-};
-linkUser.addEventListener('mouseenter', clickUserActive);
-linkUser.addEventListener('mouseleave', clickUser);
-
-// Backet hover
-var clickBacketActive = function () {
-  linkBacket.classList.add('icon__backet--hidden');
-  linkBacket.classList.remove('icon__backet');
-  linkBacketActive.classList.remove('icon__backet-hover');
-  linkBacketActive.classList.add('icon__backet-hover--active');
-};
-var clickBacket = function () {
-  linkBacket.classList.remove('icon__backet--hidden');
-  linkBacket.classList.remove('icon__backet--active');
-  linkBacket.classList.add('icon__backet');
-  linkBacketActive.classList.remove('icon__backet-hover--active');
-  linkBacketActive.classList.add('icon__backet-hover');
-};
-linkBacket.addEventListener('mouseenter', clickBacketActive);
-linkBacket.addEventListener('mouseleave', clickBacket);
+menuButton.addEventListener("mouseenter", clickLineActive);
+menuButton.addEventListener("mouseleave", clickLine);
 
 // $(".card-choice__image_1").on("click", function () {
 //   $(".card-main").css("background-image", "url(../img/card-choice-1.png)");
@@ -515,7 +451,6 @@ linkBacket.addEventListener('mouseleave', clickBacket);
 // });
 
 // Стрелка вверх в аккордионе
-
 
 // Кнопка выбор цвета в каталоге
 // var buttonColor = $("[data-button='color']");
@@ -649,18 +584,3 @@ linkBacket.addEventListener('mouseleave', clickBacket);
 // });
 
 // });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
