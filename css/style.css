@@ -2525,7 +2525,6 @@ template {
 
 .menu-assortment__list {
   background-color: #fff;
-  width: 330px;
 }
 
 .menu-assortment__item {
@@ -2725,7 +2724,7 @@ template {
   position: absolute;
   padding: 45px 200px;
   width: 850px;
-  right: -108px;
+  right: 0;
   top: 0;
   z-index: 1001;
   background-color: #fff;
@@ -2912,7 +2911,7 @@ template {
 
 .contacts {
   position: absolute;
-  right: -108px;
+  right: 0;
   top: 0;
   z-index: 1001;
   padding: 40px 200px 70px 200px;
@@ -2938,7 +2937,7 @@ template {
 }
 
 .contacts-wrapper {
-  width: 651px;
+  max-width: 651px;
 }
 
 .contacts-title {
@@ -2948,6 +2947,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .contacts-title__title {
@@ -3119,7 +3119,7 @@ template {
 .thank {
   position: absolute;
   top: 0;
-  right: -108px;
+  right: 0;
   z-index: 1001;
   padding: 47px 200px 50px 200px;
   width: 1050px;
@@ -3710,6 +3710,131 @@ template {
   .footer-info__image {
     height: 95%;
   }
+  .bag {
+    padding: 20px 20px 40px 20px;
+    width: 100%;
+    right: 0%;
+  }
+  .bag-wrapper {
+    margin: auto;
+  }
+  .bag-title__title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .bag-info__span {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .bag-price__span, .bag-price__link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .bag-total__span {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .contacts {
+    padding: 20px 20px 40px 20px;
+    width: 100%;
+    right: 0%;
+  }
+  .contacts__line {
+    width: 100%;
+  }
+  .contacts-wrapper {
+    margin: auto;
+  }
+  .contacts-title__title {
+    margin-bottom: 46px;
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .contacts-sign__span, .contacts-sign__link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .contacts-sign__input {
+    width: 290px;
+    height: 45px;
+  }
+  .contacts-sign__form {
+    width: 100%;
+  }
+  .contacts-address__title {
+    margin: 0 0 18px 0;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .contacts-address__input {
+    width: 290px;
+    height: 45px;
+  }
+  .contacts-address__form {
+    width: 100%;
+  }
+  .contacts-info {
+    height: 225px;
+  }
+  .contacts-info__block {
+    height: 91px;
+  }
+  .contacts-info__title {
+    margin: 0 0 14px 0;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .contacts-info__text, .contacts-info__link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .contacts-checkbox {
+    display: none;
+  }
+  .thank {
+    padding: 20px 20px 40px 20px;
+    width: 100%;
+    right: 0%;
+  }
+  .thank-wrapper {
+    margin: auto;
+  }
+  .thank-block {
+    width: 100%;
+  }
+  .thank-block__span {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .thank-info__title {
+    margin: 0 0 33px 0;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .thank-info__text, .thank-info__link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .thank-form__title {
+    margin: 73px 0 20px 0;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .thank-form__input {
+    width: 220px;
+  }
+  .thank-form__image {
+    left: 180px;
+  }
+  .menu {
+    top: 80px;
+  }
+  .menu__line {
+    width: 350px;
+  }
+  .menu-overlay {
+    top: 80px;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -4005,6 +4130,141 @@ template {
   }
   .footer-info__image {
     height: 95%;
+  }
+  .bag {
+    padding: 20px 20px 40px 20px;
+    width: 100%;
+    right: 0%;
+  }
+  .bag-wrapper {
+    margin: auto;
+  }
+  .bag-title__title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .bag-info__span {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .bag-price__span, .bag-price__link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .bag-total__span {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .contacts {
+    padding: 20px 20px 40px 20px;
+    width: 100%;
+    right: 0%;
+  }
+  .contacts__line {
+    width: 100%;
+  }
+  .contacts-wrapper {
+    margin: auto;
+  }
+  .contacts-title {
+    width: 100%;
+  }
+  .contacts-title__title {
+    margin-bottom: 46px;
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .contacts-sign {
+    width: 100%;
+  }
+  .contacts-sign__span, .contacts-sign__link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .contacts-sign__input {
+    width: 48%;
+    height: 45px;
+  }
+  .contacts-sign__form {
+    width: 100%;
+  }
+  .contacts-address__title {
+    margin: 0 0 18px 0;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .contacts-address__input {
+    width: 48%;
+    height: 45px;
+  }
+  .contacts-address__form {
+    width: 100%;
+  }
+  .contacts-info {
+    height: 225px;
+  }
+  .contacts-info__block {
+    height: 91px;
+  }
+  .contacts-info__title {
+    margin: 0 0 14px 0;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .contacts-info__text, .contacts-info__link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .contacts-checkbox {
+    display: none;
+  }
+  .thank {
+    padding: 20px 20px 40px 20px;
+    width: 100%;
+    right: 0%;
+  }
+  .thank-wrapper {
+    margin: auto;
+    width: 100%;
+  }
+  .thank-block {
+    width: 100%;
+  }
+  .thank-block__span {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .thank-info__title {
+    margin: 0 0 33px 0;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .thank-info__text, .thank-info__link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .thank-form__form {
+    width: 100%;
+  }
+  .thank-form__title {
+    margin: 73px 0 20px 0;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .thank-form__input {
+    width: 220px;
+  }
+  .thank-form__image {
+    left: 180px;
+  }
+  .menu {
+    top: 60px;
+  }
+  .menu__line {
+    width: 350px;
+  }
+  .menu-overlay {
+    top: 60px;
   }
 }
 
@@ -4442,9 +4702,12 @@ template {
   .swiper3-slide3__image-item {
     border: 1px solid #E5E5E5;
     width: 100%;
-    height: 370px;
+    height: 380px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .swiper3-scrollbar3 {
+    margin-top: 20px;
   }
   .footer-form {
     margin-bottom: 0;
@@ -4625,10 +4888,7 @@ template {
     width: 300px;
   }
   .menu-overlay {
-    display: none;
-  }
-  .modal-overlay {
-    display: none;
+    top: 50px;
   }
   .search {
     z-index: 2000;
