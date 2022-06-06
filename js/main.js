@@ -211,12 +211,12 @@ prevAssortment.addEventListener("click", function () {
 //   $(this).next().slideToggle(1000);
 // });
 
-// Стрелка вверх в аккордионе
-
 // Кнопка выбор цвета в каталоге
 if (buttonColor) {
   buttonColor.addEventListener("click", function () {
     characterDropdownColor.classList.toggle("character-dropdown--visible");
+    characterDropdownSize.classList.remove("character-dropdown--visible");
+    characterDropdownSort.classList.remove("character-dropdown--visible");
   });
 }
 
@@ -224,6 +224,8 @@ if (buttonColor) {
 if (buttonSize) {
   buttonSize.addEventListener("click", function () {
     characterDropdownSize.classList.toggle("character-dropdown--visible");
+    characterDropdownColor.classList.remove("character-dropdown--visible");
+    characterDropdownSort.classList.remove("character-dropdown--visible");
   });
 }
 
@@ -231,6 +233,8 @@ if (buttonSize) {
 if (buttonSize) {
   buttonSort.addEventListener("click", function () {
     characterDropdownSort.classList.toggle("character-dropdown--visible");
+    characterDropdownSize.classList.remove("character-dropdown--visible");
+    characterDropdownColor.classList.remove("character-dropdown--visible");
   });
 }
 
@@ -329,12 +333,30 @@ checkboxContacts.addEventListener("click", function () {
 });
 
 // Переключение фото для просмотра в card-choice-1 (карточка товара)
-// document.querySelector(".card-choice__image_1").addEventListener('click', function() {
-//   document.querySelector(".card-main").style.backgroundImage = "url(../img/card-choice-1.png)";
-// });
-// document.querySelector(".card-choice__image_2").addEventListener('click', function() {
-//   document.querySelector(".card-main").style.backgroundImage = "url(../img/card-choice-2.png)";
-// });
+document.querySelector(".card-choice__image_1").addEventListener('click', function() {
+  document.querySelector(".card-main").style.backgroundImage = "url(img/card-choice-1.png)";
+});
+document.querySelector(".card-choice__image_2").addEventListener('click', function() {
+  document.querySelector(".card-main").style.backgroundImage = "url(img/card-choice-2.png)";
+});
+document
+  .querySelector(".card-choice__image_3")
+  .addEventListener("click", function () {
+    document.querySelector(".card-main").style.backgroundImage =
+      "url(img/card-choice-3.png)";
+  });
+document
+  .querySelector(".card-choice__image_4")
+  .addEventListener("click", function () {
+    document.querySelector(".card-main").style.backgroundImage =
+      "url(img/card-choice-4.png)";
+  });
+document
+  .querySelector(".card-choice__image_5")
+  .addEventListener("click", function () {
+    document.querySelector(".card-main").style.backgroundImage =
+      "url(img/card-choice-5.png)";
+  });
 
 // MenuButton hover
 var menuLine = document.querySelectorAll(".navbar-button__line");
@@ -350,22 +372,6 @@ var clickLine = function () {
 };
 menuButton.addEventListener("mouseenter", clickLineActive);
 menuButton.addEventListener("mouseleave", clickLine);
-
-// $(".card-choice__image_1").on("click", function () {
-//   $(".card-main").css("background-image", "url(../img/card-choice-1.png)");
-// });
-// $(".card-choice__image_2").on("click", function () {
-//   $(".card-main").css("background-image", "url(../img/card-choice-2.png)");
-// });
-// $(".card-choice__image_3").on("click", function () {
-//   $(".card-main").css("background-image", "url(../img/card-choice-3.png)");
-// });
-// $(".card-choice__image_4").on("click", function () {
-//   $(".card-main").css("background-image", "url(../img/card-choice-4.png)");
-// });
-// $(".card-choice__image_5").on("click", function () {
-//   $(".card-main").css("background-image", "url(../img/card-choice-5.png)");
-// });
 
 // jQuery
 // $(document).ready(function () {

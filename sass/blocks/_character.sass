@@ -21,6 +21,7 @@
     &__block
         display: flex
         align-items: start
+        position: relative
     &__span
         margin-right: 14px
         font-family: GTEestiProDisplay-Light
@@ -45,20 +46,20 @@
             display: block
         &__color
             position: absolute
-            top: 384px
-            left: 191px
+            top: 45px
+            left: 0px
             z-index: 0
             animation: dropdown-color 0.3s ease-in 1 both
         &__size
             position: absolute
-            top: 384px
-            left: 280px
+            top: 45px
+            left: 0px
             z-index: 0
             animation: dropdown-size 0.3s ease-in 1 both
         &__sort
             position: absolute
-            top: 384px
-            left: 1134px
+            top: 45px
+            left: -180px
             z-index: 0
             width: 260px
             height: 193px
@@ -85,6 +86,8 @@
             border: 1px solid #E5E5E5
             &--active
                 background-color: #000
+        // &__label
+        //     margin-bottom: 25px
 
 @keyframes dropdown-color
     0%
