@@ -103,10 +103,10 @@ var swiper = new Swiper(".swiper3", {
 // JS
 
 // Preloader
-// var preloader = document.querySelector(".preloader");
-//   setTimeout (function() {
-//   preloader.classList.add("preloader--hidden");
-//   }, 6000);
+var preloader = document.querySelector(".preloader");
+  setTimeout (function() {
+  preloader.classList.add("preloader--hidden");
+  }, 6000);
 
 const menuOverlay = document.querySelector(".menu-overlay"),
   modalOverlay = document.querySelector(".modal-overlay"),
@@ -205,12 +205,6 @@ prevAssortment.addEventListener("click", function () {
   menuMobile.classList.toggle("menu-mobile--visibile");
 });
 
-// Аккордион - this еще не проходила в js
-// buttonAcc.addEventListener('click', function () {
-//   menuCostume.not($(this).next()).slideUp(1000);
-//   $(this).next().slideToggle(1000);
-// });
-
 // Кнопка выбор цвета в каталоге
 if (buttonColor) {
   buttonColor.addEventListener("click", function () {
@@ -307,13 +301,13 @@ buttonFinish.addEventListener("click", function () {
 // События активных элементов
 
 // Footer form
-var footerFormImage = document.querySelector(".footer-form__image");
-var footerFormImageGrey = document.querySelector(".footer-form__image--grey");
+const footerFormImage = document.querySelector(".footer-form__image");
+const footerFormImageGrey = document.querySelector(".footer-form__image--grey");
 
-var clickInputActive = function () {
+const clickInputActive = function () {
   footerFormImageGrey.classList.add("footer-form__image--grey_active");
 };
-var clickInput = function () {
+const clickInput = function () {
   footerFormImageGrey.classList.remove("footer-form__image--grey_active");
 };
 
@@ -359,13 +353,13 @@ document
   });
 
 // MenuButton hover
-var menuLine = document.querySelectorAll(".navbar-button__line");
-var clickLineActive = function () {
+const menuLine = document.querySelectorAll(".navbar-button__line");
+const clickLineActive = function () {
   menuLine[0].classList.add("navbar-button__line--active");
   menuLine[1].classList.add("navbar-button__line--active");
   menuLine[2].classList.add("navbar-button__line--active");
 };
-var clickLine = function () {
+const clickLine = function () {
   menuLine[0].classList.remove("navbar-button__line--active");
   menuLine[1].classList.remove("navbar-button__line--active");
   menuLine[2].classList.remove("navbar-button__line--active");

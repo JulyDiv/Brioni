@@ -1,0 +1,32 @@
+.swiper
+    width: 1600px
+    height: 800px
+    &-button
+        padding: 0
+        top: 362px
+        width: 120px
+        height: 120px
+        background: rgba(229, 229, 229, 0.2)
+        border-radius: 50%
+        border: none
+        cursor: pointer
+        background-repeat: no-repeat
+        background-position: center
+        &::after
+            content: ''
+        &--prev
+            left: 140px
+            background-image: url(../img/arrow-prev.svg)
+        &--next
+            right: 140px
+            background-image: url(../img/arrow-next.svg)
+    &-pagination
+        &-bullet
+            background-color: inherit
+            width: 10px
+            height: 10px
+            border: 1px solid rgba(255, 255, 255, 0.6)
+            &-active
+                background-color: white
+                width: 13px
+                height: 13px
